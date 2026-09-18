@@ -1,0 +1,160 @@
+# Proposed canon additions from Task 16 (ESRS S1 own workforce).
+# Every number below is written exactly as it appears in csrd/s1-workforce.md and, where it is
+# a headcount, is the sum of data/workforce.csv. Nothing here has been written into
+# canon/facts.yaml; the Quartermaster-General decides what enters canon.
+# Rationale for each key is the one-line comment beside it.
+
+s1:
+
+  # --- scale, FY2024 (FY2025 is already canon under scale.*) ---
+  seagoing_headcount_fy2024: 1926          # hands at sea at 2024-09-30; sum of data/workforce.csv, location_kind hull
+  shore_headcount_fy2024: 345              # hands at the five chambers at 2024-09-30; sum of location_kind base
+  total_headcount_fy2024: 2271             # 1,926 + 345; 1.0% below FY2025
+
+  # --- gender ---
+  women_headcount_fy2025: 967
+  women_headcount_fy2024: 954
+  men_headcount_fy2025: 1307
+  men_headcount_fy2024: 1297
+  other_or_not_stated_headcount_fy2025: 20
+  other_or_not_stated_headcount_fy2024: 20
+  women_share_percent_fy2025: 42.2         # 967 / 2,294
+  women_share_percent_fy2024: 42.0         # 954 / 2,271
+  women_share_at_sea_percent_fy2025: 41.6  # 809 / 1,944
+  women_share_ashore_percent_fy2025: 45.1  # 158 / 350
+
+  # --- origin an' contract ---
+  netherlands_origin_share_percent_fy2025: 35.2   # 808 / 2,294; the Dutch core
+  articled_on_shares_fy2025: 1974
+  articled_on_shares_fy2024: 1951
+  waged_ashore_fy2025: 320
+  waged_ashore_fy2024: 320
+  shore_hands_articled_on_shares_fy2025: 30       # yard an' loft hands who sail on trial
+
+  # --- turnover ---
+  hands_left_fy2025: 168
+  hands_left_fy2024: 181
+  turnover_rate_percent_fy2025: 7.3               # 168 / 2,294
+  turnover_rate_percent_fy2024: 8.0               # 181 / 2,271
+  leavers_at_voyage_end_fy2025: 96
+  leavers_to_other_trades_fy2025: 47
+  leavers_retired_fy2025: 21
+  leavers_dismissed_fy2025: 4
+
+  # --- non-employees ---
+  non_employees_fy2025: 181                       # 1 + 62 + 118
+  non_employees_notary_clerk_fy2025: 1            # the landsmen's exception, Article 23
+  non_employees_port_pilots_fy2025: 62
+  non_employees_day_labour_fy2025: 118            # day labour at the careenin' hards
+
+  # --- voice an' grievance ---
+  collective_bargaining_coverage_percent: 100     # every enrolled hand, under the articles, by the vote
+  concerns_raised_fy2025: 31                      # parleys called by hands
+  concerns_raised_fy2024: 27
+  concerns_upheld_fy2025: 22
+  concerns_upheld_fy2024: 18
+  concerns_not_upheld_fy2025: 7
+  concerns_not_upheld_fy2024: 8
+  concerns_open_at_year_end_fy2025: 2
+  concerns_open_at_year_end_fy2024: 1
+  concerns_upheld_pay_fy2025: 11
+  concerns_upheld_berths_fy2025: 6
+  concerns_upheld_discrimination_fy2025: 4
+  concerns_upheld_safety_fy2025: 1
+
+  # --- diversity ---
+  officer_ratings_fy2025: 148                     # ratings of command across the fleet; sum of role_group officer
+  women_in_officer_ratings_fy2025: 54
+  women_officer_ratings_share_percent_fy2025: 36.5
+  top_management_women: 6                         # of the 10 officers in lore/people.md
+  top_management_men: 4
+  top_management_women_share_percent: 60.0
+  top_management_age_under_30: 0
+  top_management_age_30_to_50: 3
+  top_management_age_over_50: 7
+  workforce_age_under_30_fy2025: 428              # 18.7%
+  workforce_age_30_to_50_fy2025: 1341             # 58.5%
+  workforce_age_over_50_fy2025: 525               # 22.9%
+  youngest_hand_age_fy2025: 18                    # attested at the muster; no hand under age
+
+  # --- pay ---
+  under_adequate_wage_before_floor_fy2025: 214    # hands under the local adequate-wage benchmark on the share alone
+  under_adequate_wage_after_floor_fy2025: 96      # 4.2% of all hands, after the floor payment
+  floor_payment_coverage_percent_fy2025: 100
+  floor_payment_coverage_percent_fy2024: 92
+  hardship_chest_draws_fy2025: 64
+  gender_pay_gap_percent: 0.4                     # mean, total remuneration; arises wholly from rating mix
+  ceo_pay_ratio: 1.9                              # Captain-General's total share to the median hand's, 1.9 : 1
+
+  # --- social protection an' disability ---
+  social_protection_coverage_percent: 100         # the Matanzas schedule an' the hardship chest, every event, every chamber
+  hands_with_disability_fy2025: 34                # 1.5% of the muster; a lasting impairment recorded by a surgeon
+  hands_moved_ashore_at_rating_fy2025: 9          # under Article 9
+
+  # --- trainin' ---
+  training_hours_per_hand_fy2025: 41
+  training_hours_per_hand_fy2024: 36
+  total_training_hours_fy2025: 94054              # 41 x 2,294
+  total_training_hours_fy2024: 81756              # 36 x 2,271
+  performance_review_coverage_percent: 100        # the muster is the review
+  apprentices_vlissingen_fy2025: 11
+  apprentices_vlissingen_fy2024: 9
+  sailmakers_under_instruction_ambon_fy2025: 22
+  sailmakers_under_instruction_ambon_fy2024: 22
+
+  # --- life an' limb ---
+  fatalities_fy2025: 0
+  fatalities_fy2024: 0
+  fatalities_other_workers_fy2025: 0
+  fatalities_other_workers_fy2024: 0
+  hurts_fy2025: 47                                # recordable hurts taken in the Gilde's service
+  hurts_fy2024: 54
+  hurts_falls_from_aloft_fy2025: 14
+  hurts_falls_from_aloft_fy2024: 19
+  hurts_gunnery_fy2025: 6
+  hurts_gunnery_fy2024: 7
+  hurts_careening_fy2025: 11
+  hurts_careening_fy2024: 12
+  hurts_scurvy_fy2025: 9
+  hurts_scurvy_fy2024: 11
+  hurts_other_fy2025: 7
+  hurts_other_fy2024: 5
+  hours_worked_fy2025: 5712400                    # 1,944 x 2,600 + 350 x 1,880; derived from the watch bill
+  hours_worked_fy2024: 5656200                    # 1,926 x 2,600 + 345 x 1,880
+  hours_per_seagoing_hand: 2600
+  hours_per_shore_hand: 1880
+  hurts_per_million_hours_fy2025: 8.2
+  hurts_per_million_hours_fy2024: 9.5
+  hurts_per_1000_hands_fy2025: 20.5
+  hurts_per_1000_hands_fy2024: 23.8
+  days_lost_fy2025: 1186
+  days_lost_fy2024: 1402
+  ill_health_cases_fy2025: 9
+  ill_health_cases_fy2024: 11
+  matanzas_payments_count_fy2025: 9
+  matanzas_payments_count_fy2024: 11
+  matanzas_payments_eur_fy2025: 106000            # one eye, two fingers, six proportional awards under Article 9
+  matanzas_payments_eur_fy2024: 151000
+  safety_lines_issued_fy2025: 240                 # sets of tarred safety lines made at the Vlissingen yard
+
+  # --- work-life balance ---
+  leave_ashore_minimum_days: 30
+  average_leave_ashore_days_fy2025: 47
+  family_leave_takers_fy2025: 147                 # 71 women, 76 men
+  family_leave_women_fy2025: 71
+  family_leave_men_fy2025: 76
+  family_leave_entitlement_percent: 100
+
+  # --- incidents ---
+  discrimination_incidents_fy2025: 5
+  discrimination_incidents_fy2024: 4
+  severe_human_rights_incidents_fy2025: 0
+  severe_human_rights_incidents_fy2024: 0
+  forced_labour_incidents_fy2025: 0
+  child_labour_incidents_fy2025: 0
+  human_rights_fines_eur_fy2025: 0
+
+  # --- the marks ---
+  target_2030_hurts_per_1000_hands: 12.0
+  target_2030_women_share_percent: 45.0
+  target_2030_floor_payment_coverage_percent: 100

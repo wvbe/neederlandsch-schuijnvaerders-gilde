@@ -1,0 +1,84 @@
+# Canon proposal from Task 18 (csrd/g1-conduct.md). Every number this file introduces,
+# exactly as written in the topic file. The Quartermaster-General (a human) decides what
+# enters canon/facts.yaml; nothing here is canon until it is merged there.
+g1:
+  # the commissie due diligence
+  bond_percent_of_expected_prize: 20          # of the registrar's estimate of the expected prize value
+  bond_minimum_eur: 250000                    # floor under the percentage, posted at Middelburg
+  auction_public_notice_days: 14              # notice posted at the chamber and the port before the sale
+  commissions_applied_fy2025: 12              # written applications registered at Middelburg
+  commissions_refused_at_registration_fy2025: 3
+  commissions_refused_conditions_fy2025:      # which of the 8 refusal conditions each was refused on
+    - condition: 1
+      reason: "the named target flew the flag of an EU Member State"
+    - condition: 2
+      reason: "the party complained of was under truce on the client's own declaration"
+    - condition: 5
+      reason: "the waters asked for lay outside what could be worked within the term named"
+
+  # anti-corruption
+  gift_ceiling_eur_per_port_call: 250         # all gifts to all officials of that port, per call
+  gift_ledger_entries_fy2025: 187             # across all five chambers
+  gift_ledger_value_eur_fy2025: 21400
+  improper_payment_demands_refused_fy2025: 4
+  improper_payment_demands_refused_fy2024: 3
+  gift_entries_revalued_upward_fy2025: 2      # by the Quartermaster-General on review
+
+  # incidents
+  corruption_incidents_fy2025: 1
+  corruption_incidents_fy2024: 0
+  corruption_convictions_fy2025: 0
+  corruption_convictions_fy2024: 0
+  fines_eur_fy2025: 0                         # fines for violation of anti-corruption or anti-bribery laws
+  fines_eur_fy2024: 0
+  contracts_terminated_for_violations_fy2025: 0
+  contracts_terminated_for_violations_fy2024: 0
+  hands_dismissed_fy2025: 0
+  hands_dismissed_fy2024: 0
+  internal_sanctions_eur_fy2025: 3850         # one share, levied on the master under Article 15
+  internal_sanctions_eur_fy2024: 0
+  sums_repaid_to_common_chest_eur_fy2025: 660
+  sums_repaid_to_common_chest_eur_fy2024: 0
+  incident_fy2025:
+    port: "Port Royal, Jamaica"
+    hull: "NSG-20"                            # Squall, the Caribbean interdiction sloop
+    gift_value_eur: 660
+    ceiling_eur: 250
+    found_by: "the Quartermaster-General's Kermis review of the gift ledger"
+    outcome: "repaid in full, master fined one share, ledger review moved to every half-year"
+
+  # whistleblowing
+  whistleblower_calls_fy2025: 7               # parley calls on a conduct matter
+  whistleblower_retaliation_complaints_fy2025: 0
+
+  # training
+  hands_hearing_the_articles_percent_fy2025: 100
+  gift_and_port_dues_training_persons_fy2025: 30   # 25 masters and 5 Harbourmasters
+  gift_and_port_dues_training_percent_fy2025: 100
+
+  # suppliers and payment practices
+  supplier_count_fy2025: 96
+  payment_terms_days: 30
+  average_days_to_pay_fy2025: 24
+  average_days_to_pay_fy2024: 26
+  invoices_paid_within_terms_percent_fy2025: 96.4
+  invoices_paid_within_terms_percent_fy2024: 94.1
+  late_payment_proceedings_fy2025: 0
+  late_payment_proceedings_fy2024: 0
+  late_payment_disputes_settled_fy2025: 2
+  late_payment_disputes_settled_fy2024: 3
+  suppliers_electing_shares_fy2025: 11
+  suppliers_electing_shares_fy2024: 9
+
+  # political influence
+  political_contributions_eur_fy2025: 0
+  political_contributions_eur_fy2024: 0
+  registered_lobbying_fy2025: false
+  petitions_fy2025: 3
+  petitions_fy2025_list:
+    - lodged_with: "the port authority at Vlissingen"
+      subject: "a sail-only berth at the inner harbour reachable without a tow"
+    - lodged_with: "the port authority at Baltimore"
+      subject: "leave to careen in February and March, outside the grey seals' whelping"
+    - lodged_with: "the Zeeland provincial estates"
+      subject: "recognition of carriage under sail alone in the province's carriage accounting"

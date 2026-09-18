@@ -1,0 +1,851 @@
+# Canon: the single source of truth for every number and proper noun in this repository.
+# Prose quotes these values; it never invents competing ones. scripts/check_canon.py enforces it.
+# Keys are plain English. Values marked TBD are filled by the task named in the comment.
+
+company:
+  legal_name: "Neederlandsch Schuijnvaerders Gilde N.V."
+  short_name: "Neederlandsch Schuijnvaerders Gilde"
+  abbreviation: "NSG"
+  english_gloss: "Netherlandish Guild of Crooked Sailors"
+  trade_name_english: "Pirate Shipping Inc"   # used in English-speaking ports and with international clients
+  legal_form: "N.V."
+  country: "NL"
+  seat: "Vlissingen"
+  prize_council_seat: "Middelburg"
+  founded_year: 1621
+  founding_date: "1621-04-09"                  # lapse of the Twelve Years' Truce
+  reincorporated_nv_year: 1929                 # re-incorporated as N.V. under the Dutch company law of 1928
+  founding_prize: "Piet Heyn's silver fleet, Matanzas Bay, 8 September 1628"
+  age_in_2026: 405
+
+reporting:
+  fiscal_year_start_month: 10
+  fiscal_year_name: "Kermis year"
+  reported_year_label: "FY2025"
+  reported_year_key: "102024-092025"           # Salacia period key: 1 Oct 2024 to 30 Sep 2025
+  reported_year_start: "2024-10-01"
+  reported_year_end: "2025-09-30"
+  base_year_label: "FY2024"
+  base_year_key: "102023-092024"
+  currency: "EUR"
+  flavour_currency: "guilders of 20 stuivers"  # prose-only, never in a reported value
+  csrd_threshold_employees: 1000               # "more than"
+  csrd_threshold_net_turnover_eur: 450000000   # "more than"
+  csrd_thresholds_source: "Omnibus I Directive amending CSRD, published in the Official Journal 26 February 2026, in force 18 March 2026: undertakings with more than 1,000 employees and more than EUR 450 million net turnover"
+  csrd_thresholds_checked_on: "2026-09-18"
+  csrd_mandatory_from: "financial years starting on or after 1 January 2027 (FY2028 for NSG's October year)"
+  csrd_status: "voluntary early adoption for FY2025, ahead of the mandatory date; NSG meets both size thresholds"
+  first_csrd_report_for: "FY2025"
+
+scale:
+  fleet_count: 25
+  base_count: 5
+  seagoing_headcount: 1944
+  shore_headcount: 350
+  total_headcount: 2294
+  total_headcount_rounded: "about 2,300"
+  turnover_eur_reported_year: 480000000
+  turnover_eur_base_year: 461000000
+  turnover_rounded: "about EUR 480 million"
+  regions:
+    - Netherlands
+    - United Kingdom
+    - Ireland
+    - Caribbean
+    - Indian Ocean
+    - South East Asia
+    - Pacific islands
+  preferred_cargo:
+    - spices
+    - valuables
+    - exotic materials
+
+fleet_mix:                                    # crew per ship x count; Task 7 names the ships
+  - type: "retourschip"
+    english: "East Indiaman"
+    count: 4
+    crew_each: 220
+    role: "long-haul cargo, valuables"
+  - type: "jacht"
+    english: "light frigate"
+    count: 6
+    crew_each: 90
+    role: "escort, fast cargo, interdiction"
+  - type: "fluyt"
+    english: "fluyt"
+    count: 8
+    crew_each: 18
+    role: "bulk spices and materials"
+  - type: "sloep"
+    english: "interdiction sloop or bark"
+    count: 5
+    crew_each: 70
+    role: "boarding and seizure"
+  - type: "galjoot"
+    english: "advice boat"
+    count: 2
+    crew_each: 15
+    role: "dispatches, coastal supply"
+
+bases:                                        # one chamber per region cluster; Task 6 fills TBD
+  - key: vlissingen
+    name: "Vlissingen"
+    chamber_name: "Kamer Vlissingen"
+    region: "Netherlands"
+    country: "NL"
+    entity_name: "Neederlandsch Schuijnvaerders Gilde N.V."   # the root entity is the Vlissingen chamber
+    entity_language: "Dutch"
+    entity_gloss: "Netherlandish Guild of Crooked Sailors, public company"
+    is_root_entity: true
+    shore_headcount: 120
+    lat: 51.4426
+    lon: 3.5735
+    established_year: 1621
+    function: "seat, counting house, shipyard, ropewalk"
+  - key: baltimore
+    name: "Baltimore, West Cork"
+    chamber_name: "Chamber of Baltimore"
+    region: "Ireland"
+    country: "IE"
+    entity_name: "Crooked Sailors' Guild of Baltimore Limited"
+    entity_language: "English"
+    entity_name_local: "Gild na Seoltóirí Cama, Dún na Séad"   # Irish gloss, invented
+    entity_gloss: "Crooked Sailors' Guild of Baltimore"
+    is_root_entity: false
+    shore_headcount: 45
+    lat: 51.4833
+    lon: -9.3667
+    established_year: 1631
+    function: "Atlantic approaches, victualling, careening"
+  - key: port_royal
+    name: "Port Royal, Jamaica"
+    chamber_name: "Chamber of Port Royal"
+    region: "Caribbean"
+    country: "JM"
+    entity_name: "Crooked Sailors' Guild (Port Royal) Limited"
+    entity_language: "English"
+    entity_gloss: "Crooked Sailors' Guild, Port Royal"
+    is_root_entity: false
+    shore_headcount: 70
+    lat: 17.9370
+    lon: -76.8410
+    established_year: 1660
+    function: "Caribbean cruising ground, prize auction house, warehouses"
+  - key: sainte_marie
+    name: "Île Sainte-Marie (Nosy Boraha), Madagascar"
+    chamber_name: "Chambre de Sainte-Marie"
+    region: "Indian Ocean"
+    country: "MG"
+    entity_name: "Guilde des Navigateurs Obliques de Sainte-Marie SARL"
+    entity_language: "French"
+    entity_name_local: "Fikambanan'ny Tantsambo Mitongilana"      # Malagasy gloss, invented
+    entity_gloss: "Guild of Oblique Navigators of Sainte-Marie"
+    is_root_entity: false
+    shore_headcount: 50
+    lat: -17.0000
+    lon: 49.8500
+    established_year: 1691
+    function: "Indian Ocean victualling, careening, fresh water"
+  - key: ambon
+    name: "Ambon, Moluccas"
+    chamber_name: "Kamar Ambon"
+    region: "South East Asia and Pacific"
+    country: "ID"
+    entity_name: "PT Gilda Pelayar Serong Ambon"
+    entity_language: "Indonesian"
+    entity_gloss: "Guild of Crooked Sailors of Ambon, limited company"
+    is_root_entity: false
+    shore_headcount: 65
+    lat: -3.6954
+    lon: 128.1814
+    established_year: 1623
+    function: "spice islands trade, Pacific gateway, sail loft"
+
+governance:
+  supervisory_body: "De Heeren Vijf"
+  supervisory_body_english: "the Lords Five"
+  management_body: "Raad van Kapiteins"
+  management_body_english: "Council of Captains"
+  presiding_officer: "Captain-General"
+  counterweight_officer: "Quartermaster-General"
+  bookkeeper_officer: "Advocaat-Boekhouder"
+  prize_body: "Prize Council"
+  presidency_rotation: "Vlissingen three years, each other chamber one year"
+  signatories:
+    - "Captain-General, for the Raad van Kapiteins"
+    - "Presiding Lord of De Heeren Vijf"
+    - "Quartermaster-General (countersignature)"
+    - "Advocaat-Boekhouder (attestation of figures)"
+  board_gender:                                 # whole-body composition for ESRS 2 GOV-1; officers named in people.md are a subset
+    heeren_vijf_members: 5
+    heeren_vijf_women: 3
+    raad_members: 25
+    raad_women: 10
+  officers:                                     # Task 8; see lore/people.md
+    - name: "Ezekiel Brathwaite"
+      office: "Captain-General"
+      chamber_key: port_royal
+      born: 1968
+      joined: 1989
+      signs_fy2025: true
+    - name: "Anneke Roozemond"
+      office: "Presiding Lord of De Heeren Vijf"
+      chamber_key: vlissingen
+      born: 1962
+      joined: 1988
+      signs_fy2025: true
+    - name: "Saoirse Ní Dhrisceoil"
+      office: "Quartermaster-General"
+      chamber_key: baltimore
+      born: 1979
+      joined: 2001
+      signs_fy2025: true
+    - name: "Marijke van der Goes"
+      office: "Advocaat-Boekhouder"
+      chamber_key: vlissingen
+      born: 1971
+      joined: 1996
+      signs_fy2025: true
+    - name: "Joost Wisse"
+      office: "Harbourmaster"
+      chamber_key: vlissingen
+      born: 1974
+      joined: 1998
+      signs_fy2025: false
+    - name: "Dónal Crowley"
+      office: "Harbourmaster"
+      chamber_key: baltimore
+      born: 1969
+      joined: 1993
+      signs_fy2025: false
+    - name: "Icylin Samuda"
+      office: "Harbourmaster"
+      chamber_key: port_royal
+      born: 1966
+      joined: 1991
+      signs_fy2025: false
+    - name: "Voahangy Rasoanaivo"
+      office: "Harbourmaster"
+      chamber_key: sainte_marie
+      born: 1980
+      joined: 2004
+      signs_fy2025: false
+    - name: "Yusuf Tuhumury"
+      office: "Harbourmaster"
+      chamber_key: ambon
+      born: 1972
+      joined: 1997
+      signs_fy2025: false
+    - name: "Andi Nurhaida"
+      office: "Sailing Master"
+      chamber_key: ambon
+      born: 1988
+      joined: 2010
+      signs_fy2025: false
+  injury_schedule_eur:                          # the Matanzas schedule (1628), restated in EUR
+    right_arm: 60000
+    left_arm: 50000
+    right_leg: 50000
+    left_leg: 40000
+    eye: 10000
+    finger: 10000
+    death_in_service: 120000
+
+operations:
+  interdiction_service_name: "Letters of Marque Division"
+  interdiction_steps: 5
+  refusal_conditions: 8
+  share_split_prize_percent:                  # of a prize, net of costs; sums to 100
+    client: 40
+    company: 30
+    chamber_fee: 10
+    crew: 20
+  share_split_freight_percent:                # of a freight, net of costs; sums to 100
+    client: 0                                 # the client takes his goods, not a share
+    company: 60
+    chamber_fee: 15
+    crew: 25
+  commissions_served_fy2025:                  # Letters of Marque Division, 102024-092025
+    total: 9
+    good_prize: 5
+    restitution: 2
+    released: 2
+  routes:
+    - code: "ATL-1"
+      from: "Vlissingen"
+      to: "Port Royal"
+      season: "December to May, outside the Atlantic hurricane season"
+    - code: "ATL-2"
+      from: "Port Royal"
+      to: "Vlissingen"
+      season: "homeward from March, clear of the Caribbean before 1 June"
+    - code: "IND-1"
+      from: "Vlissingen"
+      to: "Île Sainte-Marie"
+      season: "out from October to January, easting in the Roaring Forties"
+    - code: "IND-2"
+      from: "Île Sainte-Marie"
+      to: "Ambon"
+      season: "eastbound on the south-west monsoon, May to September"
+    - code: "PAC-1"
+      from: "Ambon"
+      to: "the Pacific islands"
+      season: "April to October, home before the South Pacific cyclone season"
+    - code: "IND-3"
+      from: "Ambon"
+      to: "Vlissingen"
+      season: "westbound on the north-east monsoon, October to March"
+    - code: "CST-1"
+      from: "Baltimore"
+      to: "Vlissingen"
+      season: "all year, thinnest November to February"
+    - code: "BAL-1"
+      from: "Vlissingen"
+      to: "the Baltic and Norway"
+      season: "April to October"
+  technology_rule: "Nothing aboard or ashore that was not in use on a Dutch ship in the 1600s"
+
+e1:                                           # Task 14; computed from data/e1-activity-data.csv, stated in csrd/e1-climate.md
+  scope1_fossil_tco2e_fy2025: 168.0
+  scope1_fossil_tco2e_fy2024: 185.9
+  biogenic_co2_t_fy2025: 630.3
+  biogenic_co2_t_fy2024: 650.9
+  scope2_tco2e: 0                             # the Gilde buys no electricity, heat or steam; location-based and market-based alike
+  scope3_tco2e_fy2025: 5733
+  scope3_tco2e_fy2024: 5407
+  total_energy_mwh_fy2025: 20442
+  renewable_energy_share_percent: 97.9
+  target_2030_scope1_tco2e: 110
+  target_2050_scope1_tco2e: 45
+  cargo_tonne_nmi_fy2025: 78000000   # denominator of the Scope 3 intensity mark in csrd/e1-climate.md E1-4; derived from the fleet register
+  cargo_tonne_nmi_fy2024: 74000000
+
+dma:                                          # Task 13; the reckonin' o' what matters, scored in data/iros.csv
+  iro_count: 30
+  impact_threshold: 9                         # impact score (severity x likelihood) on a scale of 25
+  financial_threshold: 9                      # financial score (magnitude x likelihood) on a scale of 25
+  material_topics: ["E1", "E2", "E3", "E4", "E5", "S1", "S2", "S3", "S4", "G1"]
+  immaterial_topics: []
+  partially_material_topics: ["E3", "S4"]
+  owner: "Quartermaster-General"
+  method_note: "Bounded criteria of 1 to 5 scored at the Kermis parley and the Harbourmasters' port hearings; a matter weighs when either score reaches 9, or when an actual impact carries a severity of 4 or more."
+
+# S1 own workforce; computed from data/workforce.csv, stated in csrd/s1-workforce.md (merged from tasks/canon-proposals/s1.yaml)
+# Proposed canon additions from Task 16 (ESRS S1 own workforce).
+# Every number below is written exactly as it appears in csrd/s1-workforce.md and, where it is
+# a headcount, is the sum of data/workforce.csv. Nothing here has been written into
+# canon/facts.yaml; the Quartermaster-General decides what enters canon.
+# Rationale for each key is the one-line comment beside it.
+
+s1:
+
+  # --- scale, FY2024 (FY2025 is already canon under scale.*) ---
+  seagoing_headcount_fy2024: 1926          # hands at sea at 2024-09-30; sum of data/workforce.csv, location_kind hull
+  shore_headcount_fy2024: 345              # hands at the five chambers at 2024-09-30; sum of location_kind base
+  total_headcount_fy2024: 2271             # 1,926 + 345; 1.0% below FY2025
+
+  # --- gender ---
+  women_headcount_fy2025: 967
+  women_headcount_fy2024: 954
+  men_headcount_fy2025: 1307
+  men_headcount_fy2024: 1297
+  other_or_not_stated_headcount_fy2025: 20
+  other_or_not_stated_headcount_fy2024: 20
+  women_share_percent_fy2025: 42.2         # 967 / 2,294
+  women_share_percent_fy2024: 42.0         # 954 / 2,271
+  women_share_at_sea_percent_fy2025: 41.6  # 809 / 1,944
+  women_share_ashore_percent_fy2025: 45.1  # 158 / 350
+
+  # --- origin an' contract ---
+  netherlands_origin_share_percent_fy2025: 35.2   # 808 / 2,294; the Dutch core
+  articled_on_shares_fy2025: 1974
+  articled_on_shares_fy2024: 1951
+  waged_ashore_fy2025: 320
+  waged_ashore_fy2024: 320
+  shore_hands_articled_on_shares_fy2025: 30       # yard an' loft hands who sail on trial
+
+  # --- turnover ---
+  hands_left_fy2025: 168
+  hands_left_fy2024: 181
+  turnover_rate_percent_fy2025: 7.3               # 168 / 2,294
+  turnover_rate_percent_fy2024: 8.0               # 181 / 2,271
+  leavers_at_voyage_end_fy2025: 96
+  leavers_to_other_trades_fy2025: 47
+  leavers_retired_fy2025: 21
+  leavers_dismissed_fy2025: 4
+
+  # --- non-employees ---
+  non_employees_fy2025: 181                       # 1 + 62 + 118
+  non_employees_notary_clerk_fy2025: 1            # the landsmen's exception, Article 23
+  non_employees_port_pilots_fy2025: 62
+  non_employees_day_labour_fy2025: 118            # day labour at the careenin' hards
+
+  # --- voice an' grievance ---
+  collective_bargaining_coverage_percent: 100     # every enrolled hand, under the articles, by the vote
+  concerns_raised_fy2025: 31                      # parleys called by hands
+  concerns_raised_fy2024: 27
+  concerns_upheld_fy2025: 22
+  concerns_upheld_fy2024: 18
+  concerns_not_upheld_fy2025: 7
+  concerns_not_upheld_fy2024: 8
+  concerns_open_at_year_end_fy2025: 2
+  concerns_open_at_year_end_fy2024: 1
+  concerns_upheld_pay_fy2025: 11
+  concerns_upheld_berths_fy2025: 6
+  concerns_upheld_discrimination_fy2025: 4
+  concerns_upheld_safety_fy2025: 1
+
+  # --- diversity ---
+  officer_ratings_fy2025: 148                     # ratings of command across the fleet; sum of role_group officer
+  women_in_officer_ratings_fy2025: 54
+  women_officer_ratings_share_percent_fy2025: 36.5
+  top_management_women: 6                         # of the 10 officers in lore/people.md
+  top_management_men: 4
+  top_management_women_share_percent: 60.0
+  top_management_age_under_30: 0
+  top_management_age_30_to_50: 3
+  top_management_age_over_50: 7
+  workforce_age_under_30_fy2025: 428              # 18.7%
+  workforce_age_30_to_50_fy2025: 1341             # 58.5%
+  workforce_age_over_50_fy2025: 525               # 22.9%
+  youngest_hand_age_fy2025: 18                    # attested at the muster; no hand under age
+
+  # --- pay ---
+  under_adequate_wage_before_floor_fy2025: 214    # hands under the local adequate-wage benchmark on the share alone
+  under_adequate_wage_after_floor_fy2025: 96      # 4.2% of all hands, after the floor payment
+  floor_payment_coverage_percent_fy2025: 100
+  floor_payment_coverage_percent_fy2024: 92
+  hardship_chest_draws_fy2025: 64
+  gender_pay_gap_percent: 0.4                     # mean, total remuneration; arises wholly from rating mix
+  ceo_pay_ratio: 1.9                              # Captain-General's total share to the median hand's, 1.9 : 1
+
+  # --- social protection an' disability ---
+  social_protection_coverage_percent: 100         # the Matanzas schedule an' the hardship chest, every event, every chamber
+  hands_with_disability_fy2025: 34                # 1.5% of the muster; a lasting impairment recorded by a surgeon
+  hands_moved_ashore_at_rating_fy2025: 9          # under Article 9
+
+  # --- trainin' ---
+  training_hours_per_hand_fy2025: 41
+  training_hours_per_hand_fy2024: 36
+  total_training_hours_fy2025: 94054              # 41 x 2,294
+  total_training_hours_fy2024: 81756              # 36 x 2,271
+  performance_review_coverage_percent: 100        # the muster is the review
+  apprentices_vlissingen_fy2025: 11
+  apprentices_vlissingen_fy2024: 9
+  sailmakers_under_instruction_ambon_fy2025: 22
+  sailmakers_under_instruction_ambon_fy2024: 22
+
+  # --- life an' limb ---
+  fatalities_fy2025: 0
+  fatalities_fy2024: 0
+  fatalities_other_workers_fy2025: 0
+  fatalities_other_workers_fy2024: 0
+  hurts_fy2025: 47                                # recordable hurts taken in the Gilde's service
+  hurts_fy2024: 54
+  hurts_falls_from_aloft_fy2025: 14
+  hurts_falls_from_aloft_fy2024: 19
+  hurts_gunnery_fy2025: 6
+  hurts_gunnery_fy2024: 7
+  hurts_careening_fy2025: 11
+  hurts_careening_fy2024: 12
+  hurts_scurvy_fy2025: 9
+  hurts_scurvy_fy2024: 11
+  hurts_other_fy2025: 7
+  hurts_other_fy2024: 5
+  hours_worked_fy2025: 5712400                    # 1,944 x 2,600 + 350 x 1,880; derived from the watch bill
+  hours_worked_fy2024: 5656200                    # 1,926 x 2,600 + 345 x 1,880
+  hours_per_seagoing_hand: 2600
+  hours_per_shore_hand: 1880
+  hurts_per_million_hours_fy2025: 8.2
+  hurts_per_million_hours_fy2024: 9.5
+  hurts_per_1000_hands_fy2025: 20.5
+  hurts_per_1000_hands_fy2024: 23.8
+  days_lost_fy2025: 1186
+  days_lost_fy2024: 1402
+  ill_health_cases_fy2025: 9
+  ill_health_cases_fy2024: 11
+  matanzas_payments_count_fy2025: 9
+  matanzas_payments_count_fy2024: 11
+  matanzas_payments_eur_fy2025: 106000            # one eye, two fingers, six proportional awards under Article 9
+  matanzas_payments_eur_fy2024: 151000
+  safety_lines_issued_fy2025: 240                 # sets of tarred safety lines made at the Vlissingen yard
+
+  # --- work-life balance ---
+  leave_ashore_minimum_days: 30
+  average_leave_ashore_days_fy2025: 47
+  family_leave_takers_fy2025: 147                 # 71 women, 76 men
+  family_leave_women_fy2025: 71
+  family_leave_men_fy2025: 76
+  family_leave_entitlement_percent: 100
+
+  # --- incidents ---
+  discrimination_incidents_fy2025: 5
+  discrimination_incidents_fy2024: 4
+  severe_human_rights_incidents_fy2025: 0
+  severe_human_rights_incidents_fy2024: 0
+  forced_labour_incidents_fy2025: 0
+  child_labour_incidents_fy2025: 0
+  human_rights_fines_eur_fy2025: 0
+
+  # --- the marks ---
+  target_2030_hurts_per_1000_hands: 12.0
+  target_2030_women_share_percent: 45.0
+  target_2030_floor_payment_coverage_percent: 100
+
+# G1 business conduct; stated in csrd/g1-conduct.md (merged from tasks/canon-proposals/g1.yaml)
+# Canon proposal from Task 18 (csrd/g1-conduct.md). Every number this file introduces,
+# exactly as written in the topic file. The Quartermaster-General (a human) decides what
+# enters canon/facts.yaml; nothing here is canon until it is merged there.
+g1:
+  # the commissie due diligence
+  bond_percent_of_expected_prize: 20          # of the registrar's estimate of the expected prize value
+  bond_minimum_eur: 250000                    # floor under the percentage, posted at Middelburg
+  auction_public_notice_days: 14              # notice posted at the chamber and the port before the sale
+  commissions_applied_fy2025: 12              # written applications registered at Middelburg
+  commissions_refused_at_registration_fy2025: 3
+  commissions_refused_conditions_fy2025:      # which of the 8 refusal conditions each was refused on
+    - condition: 1
+      reason: "the named target flew the flag of an EU Member State"
+    - condition: 2
+      reason: "the party complained of was under truce on the client's own declaration"
+    - condition: 5
+      reason: "the waters asked for lay outside what could be worked within the term named"
+
+  # anti-corruption
+  gift_ceiling_eur_per_port_call: 250         # all gifts to all officials of that port, per call
+  gift_ledger_entries_fy2025: 187             # across all five chambers
+  gift_ledger_value_eur_fy2025: 21400
+  improper_payment_demands_refused_fy2025: 4
+  improper_payment_demands_refused_fy2024: 3
+  gift_entries_revalued_upward_fy2025: 2      # by the Quartermaster-General on review
+
+  # incidents
+  corruption_incidents_fy2025: 1
+  corruption_incidents_fy2024: 0
+  corruption_convictions_fy2025: 0
+  corruption_convictions_fy2024: 0
+  fines_eur_fy2025: 0                         # fines for violation of anti-corruption or anti-bribery laws
+  fines_eur_fy2024: 0
+  contracts_terminated_for_violations_fy2025: 0
+  contracts_terminated_for_violations_fy2024: 0
+  hands_dismissed_fy2025: 0
+  hands_dismissed_fy2024: 0
+  internal_sanctions_eur_fy2025: 3850         # one share, levied on the master under Article 15
+  internal_sanctions_eur_fy2024: 0
+  sums_repaid_to_common_chest_eur_fy2025: 660
+  sums_repaid_to_common_chest_eur_fy2024: 0
+  incident_fy2025:
+    port: "Port Royal, Jamaica"
+    hull: "NSG-20"                            # Squall, the Caribbean interdiction sloop
+    gift_value_eur: 660
+    ceiling_eur: 250
+    found_by: "the Quartermaster-General's Kermis review of the gift ledger"
+    outcome: "repaid in full, master fined one share, ledger review moved to every half-year"
+
+  # whistleblowing
+  whistleblower_calls_fy2025: 7               # parley calls on a conduct matter
+  whistleblower_retaliation_complaints_fy2025: 0
+
+  # training
+  hands_hearing_the_articles_percent_fy2025: 100
+  gift_and_port_dues_training_persons_fy2025: 30   # 25 masters and 5 Harbourmasters
+  gift_and_port_dues_training_percent_fy2025: 100
+
+  # suppliers and payment practices
+  supplier_count_fy2025: 96
+  payment_terms_days: 30
+  average_days_to_pay_fy2025: 24
+  average_days_to_pay_fy2024: 26
+  invoices_paid_within_terms_percent_fy2025: 96.4
+  invoices_paid_within_terms_percent_fy2024: 94.1
+  late_payment_proceedings_fy2025: 0
+  late_payment_proceedings_fy2024: 0
+  late_payment_disputes_settled_fy2025: 2
+  late_payment_disputes_settled_fy2024: 3
+  suppliers_electing_shares_fy2025: 11
+  suppliers_electing_shares_fy2024: 9
+
+  # political influence
+  political_contributions_eur_fy2025: 0
+  political_contributions_eur_fy2024: 0
+  registered_lobbying_fy2025: false
+  petitions_fy2025: 3
+  petitions_fy2025_list:
+    - lodged_with: "the port authority at Vlissingen"
+      subject: "a sail-only berth at the inner harbour reachable without a tow"
+    - lodged_with: "the port authority at Baltimore"
+      subject: "leave to careen in February and March, outside the grey seals' whelping"
+    - lodged_with: "the Zeeland provincial estates"
+      subject: "recognition of carriage under sail alone in the province's carriage accounting"
+
+# S2 to S4 value chain, communities, end users; stated in csrd/s2-s4-value-chain-communities.md (merged from tasks/canon-proposals/s2-s4.yaml)
+# Canon proposals from Task 17, csrd/s2-s4-value-chain-communities.md.
+# Every number introduced by that file, exactly as the file states it. The
+# Quartermaster-General decides what enters canon/facts.yaml; nothing here is canon yet.
+# Period: FY2025, the reporting year key 102024-092025.
+
+social_value_chain:
+
+  # --- S2: workers in the value chain -------------------------------------
+  value_chain_workers_estimate: 1630          # estimate, not a payroll; sum of the breakdown below
+  value_chain_workers_breakdown:
+    hemp_growers_and_ropewalks: 90            # Zeeland about Vlissingen, West Cork about Baltimore
+    sawyers_raftsmen_forest_hands: 210        # Rhine rafts, Norway, the Baltic
+    canvas_weavers_and_sail_loft_outworkers: 120
+    coopers_and_cask_yards: 70
+    victuallers: 240
+    spice_growers_and_agents: 380             # Ambon, Banda, Ternate
+    sandalwood_growers_and_pearl_shell_divers: 150
+    tar_burners_and_iron: 60
+    dock_labour_ports_of_call: 300
+    notary_clerk_and_landsmen_trades: 10
+  spice_premium_percent_fy2025: 12            # paid above the going rate at Ambon, set with the growers' season council
+
+  seized_vessel_crew_fy2025: 168              # seafarers aboard the 9 marks stopped; sum of the breakdown
+  seized_vessel_crew_breakdown_fy2025:
+    good_prize_sold_at_auction: 81            # 4 vessels
+    good_prize_released_against_ransom_bill: 22   # 1 vessel
+    restitution_ordered: 35                   # 2 vessels
+    released_on_the_spot: 30                  # 2 vessels
+  seized_crew_treated_by_surgeon_fy2025: 4
+  seized_crew_passage_home_paid_fy2025: 63    # at the client's cost
+  seized_crew_deaths_or_grave_injuries_fy2025: 0
+
+  seized_crew_complaints_fy2025: 11           # all closed within the year
+  seized_crew_complaints_breakdown_fy2025:
+    chests_and_tools_sealed_with_cargo: 4
+    wages_lost_for_the_detention: 3
+    door_forced_or_locker_broken: 2
+    landed_further_than_nearest_port: 1
+    water_short_on_passage_in: 1
+  seized_crew_remedy_paid_eur_fy2025: 11200
+  seized_crew_remedy_chest_paid_eur_fy2025: 1400      # one chest lost overboard
+  seized_crew_wages_paid_eur_fy2025: 9800             # at the client's cost
+
+  suppliers_on_register_fy2025: 63
+  suppliers_visited_fy2025: 29
+  supplier_visits_fy2025: 34
+  supplier_hands_mustered_fy2025: 412
+  supplier_findings_under_age_fy2025: 0
+  supplier_findings_held_against_will_fy2025: 0
+  supplier_findings_wages_late_fy2025: 2
+  supplier_wage_arrears_paid_eur_fy2025: 3100
+  value_chain_complaints_total_fy2025: 13     # 11 seized-crew complaints plus 2 supplier findings
+
+  target_2027_supplier_visits: 45
+  target_2027_supplier_coverage_two_years_percent: 100
+  target_2027_ropewalk_code: true             # a written rope-walk an' sawmill code, drafted in FY2025, unsigned
+  target_2027_seized_crew_complaint_days: 30
+
+  # --- S3: affected communities -------------------------------------------
+  port_hearings_fy2025: 19
+  port_hearings_by_chamber_fy2025:
+    vlissingen: 4
+    baltimore: 3
+    port_royal: 4
+    sainte_marie: 4
+    ambon: 4
+
+  fpic_consultations_fy2025: 7                # free, prior and informed consent sought
+  fpic_consultations_breakdown_fy2025:
+    sainte_marie_water_lease: 1               # village council of Ambodifotatra
+    pacific_run_island_groups: 4              # Bismarck Archipelago, Solomon Islands, Caroline Islands, Fiji
+    moluccas_grower_councils: 2               # Banda, Ternate
+  fpic_consent_given_fy2025: 6
+  fpic_consent_refused_fy2025: 1              # an anchorage in the Caroline Islands; the jacht went elsewhere
+
+  port_claims_fy2025: 23
+  port_claims_paid_eur_fy2025: 61500
+  port_claims_by_chamber_fy2025:
+    vlissingen: 9                             # tar smoke
+    baltimore: 3                              # moorings in regatta week
+    port_royal: 5                             # powder days and the landing lost to a seizure
+    sainte_marie: 4                           # water and market
+    ambon: 2                                  # waterfront
+  port_claims_paid_eur_by_chamber_fy2025:
+    vlissingen: 21000
+    baltimore: 4500
+    port_royal: 12000
+    sainte_marie: 14000
+    ambon: 10000
+  port_claims_paid_in_part_fy2025: 2          # Vlissingen; the smoke shared with a kiln not the Gilde's
+  third_party_trade_disrupted_prizes_fy2025: 1   # one prize carried goods consigned to a trader ashore at Port Royal
+
+  target_2028_vlissingen_tar_smoke_claims: 3
+  target_2027_port_hearings_per_chamber: 4
+  target_2027_port_claim_closure_days: 60
+
+  # --- S4: consumers and end-users ----------------------------------------
+  consignees_fy2025: 47                       # spice houses, collectors, island buyers
+  interdiction_clients_fy2025: 6              # holding the year's 9 commissions
+  prize_auctions_fy2025: 6                    # at the Chamber of Port Royal
+  auction_registered_buyers_fy2025: 214
+  auction_origin_statement_items: 5
+  tortoiseshell_held_kg: 118                  # old stock of documented provenance, held and not traded
+
+  consumer_complaints_fy2025: 6               # all closed
+  consumer_complaints_breakdown_fy2025:
+    weight_short_against_manifest: 2          # honest shrinkage on a 150-day passage
+    cask_tainted_by_tar: 1                    # upheld
+    provenance_papers_not_with_parcel: 1      # delivery held 19 days
+    origin_statement_at_auction: 2
+  consumer_complaint_replacement_paid_eur_fy2025: 6200   # the tainted mace
+  consumer_complaint_delivery_held_days_fy2025: 19
+  consumer_complaints_substitution_or_false_mark_fy2025: 0
+
+# E2 to E5 environment; stated in csrd/e2-e5-environment.md (merged from tasks/canon-proposals/e2-e5.yaml)
+# Canon proposal from Task 15: every new number introduced by csrd/e2-e5-environment.md.
+# Proposed for the Quartermaster-General's decision; NOT yet canon. Values here are exactly
+# as they are written in the topic file. Quantities reused unchanged from
+# data/e1-activity-data.csv (tar, timber, hemp, sailcloth, iron, provisions) are not
+# repeated here, because they are already held in the data layer.
+
+environment:
+
+  # --- E2 pollution -------------------------------------------------------------
+  tar_boiled_t_fy2025: 29.4                      # = 29,392 kg in the activity data
+  tar_boiled_t_fy2024: 33.4                      # = 33,400 kg in the activity data
+  tar_volatile_loss_t_fy2025: 0.8                # estimate at 2.9% of mass boiled, year-weighted
+  tar_volatile_loss_t_fy2024: 1.5                # estimate at 4.5% of mass boiled, open kilns
+  tar_volatile_loss_factor_open_percent: 4.5     # open kiln
+  tar_volatile_loss_factor_hooded_percent: 2.5   # hooded kiln
+  tar_hooded_share_of_boil_percent_fy2025: 81.1  # Vlissingen, Port Royal an' Ambon hooded the whole year
+  lead_shot_fired_kg_fy2025: 1240
+  lead_shot_fired_kg_fy2024: 1310
+  lead_shot_recovered_kg_fy2025: 795
+  lead_shot_recovered_kg_fy2024: 690
+  lead_shot_recovered_percent_fy2025: 64.1
+  lead_shot_recovered_percent_fy2024: 52.7
+  lead_sheathing_laid_t_fy2025: 4.2
+  lead_sheathing_recovered_t_fy2025: 3.6
+  white_lead_paint_kg_fy2025: 1150
+  white_lead_paint_kg_fy2024: 1320
+  verdigris_kg_fy2025: 85
+  sulphur_t_fy2025: 2.4
+  bilge_pumped_m3_fy2025: 5256
+  bilge_pumped_m3_fy2024: 5402
+  ballast_shifted_m3_fy2025: 868
+  ballast_shifted_m3_fy2024: 892
+  careening_scrapings_kg_fy2025: 17640
+  careening_scrapings_kg_fy2024: 18420
+  careening_scrapings_landed_kg_fy2025: 17360
+  careening_scrapings_landed_kg_fy2024: 18030
+  careening_scrapings_landed_percent_fy2025: 98.4
+  careening_scrapings_landed_percent_fy2024: 97.9
+  discharge_within_league_incidents_fy2025: 1
+  discharge_within_league_incidents_fy2024: 3
+  target_2030_tar_boiled_t: 24.0
+  target_2030_tar_volatile_loss_t: 0.4
+  target_2030_lead_shot_recovered_percent: 90.0
+  target_2030_scrapings_landed_percent: 100.0
+  target_2030_discharge_within_league_incidents: 0
+  target_2030_no_white_lead_paint: true
+
+  # --- E3 water an' marine resources --------------------------------------------
+  water_ration_litre_per_hand_day_at_sea: 4.5
+  water_ration_litre_per_hand_day_ashore: 25
+  yard_water_m3_per_hull_year: 35                # 20 m3 full careen + 3 breamin's at 5 m3
+  water_drawn_m3_fy2025: 11767.0
+  water_drawn_m3_fy2024: 11767.0                 # same establishment, ration an' days at sea
+  water_drawn_at_sea_m3_fy2025: 2204.1
+  water_drawn_ashore_m3_fy2025: 8687.8
+  water_drawn_yard_m3_fy2025: 875.0
+  water_drawn_high_stress_m3_fy2025: 3750.5      # Sainte-Marie an' Ambon
+  water_drawn_high_stress_m3_fy2024: 3750.5
+  water_drawn_high_stress_percent_fy2025: 31.9
+  water_drawn_by_chamber_m3_fy2025:
+    vlissingen: 4260.5
+    baltimore: 1409.8
+    port_royal: 2346.2
+    sainte_marie: 1363.5
+    ambon: 2387.0
+  water_drawn_at_sea_by_hull_class_m3_fy2025:
+    retourschip: 1108.8
+    jacht: 583.2
+    fluyt: 162.0
+    sloep: 315.0
+    galjoot: 35.1
+  high_water_stress_chambers: [sainte_marie, ambon]
+  island_yard_water_from_rainwater_percent_fy2025: 14
+  island_yard_water_from_rainwater_percent_fy2024: 0
+  target_2030_water_drawn_high_stress_m3: 3000
+  target_2030_island_yard_water_from_rainwater_percent: 50
+  marine_resources_extracted: none               # no fish, no whale, no coral, no shell, no seabed
+
+  # --- E4 biodiversity an' ecosystems -------------------------------------------
+  timber_consumed_m3_fy2025: 1634
+  timber_consumed_m3_fy2024: 1597
+  timber_oak_m3_fy2025: 1361
+  timber_teak_m3_fy2025: 273
+  timber_oak_m3_fy2024: 1271
+  timber_teak_m3_fy2024: 326
+  timber_oak_t_fy2025: 980
+  timber_teak_t_fy2025: 180
+  timber_oak_t_fy2024: 915
+  timber_teak_t_fy2024: 215
+  timber_density_oak_t_per_m3: 0.72
+  timber_density_teak_t_per_m3: 0.66
+  careening_hard_ha: 3.7
+  careening_hard_ha_by_chamber:
+    vlissingen: 1.2
+    baltimore: 0.4
+    port_royal: 0.9
+    sainte_marie: 0.7
+    ambon: 0.5
+  careening_hard_on_living_reef_ha: 0
+  sites_in_or_near_biodiversity_sensitive_areas: 5
+  rat_incidents_fy2025: 2
+  rat_incidents_fy2024: 4
+  oak_planted_ha_fy2025: 2.1
+  oak_planted_ha_fy2024: 1.8
+  oak_planted_trees_fy2025: 1450
+  oak_planted_ha_since_2019: 6.8
+  hull_timber_named_replanted_source_percent_fy2025: 96
+  hull_timber_named_replanted_source_percent_fy2024: 94
+  chambers_with_signed_hard_survey_fy2025: 5
+  target_2030_no_reef_careening: true
+  target_2030_rat_incidents: 0
+  target_2030_oak_planted_ha_per_year: 2.0
+  target_2030_hull_timber_named_replanted_source_percent: 100
+  tortoiseshell_stock_held_not_traded: true      # Chamber of Port Royal warehouse, pre-dates the standin' order
+
+  # --- E5 resource use an' circular economy -------------------------------------
+  resource_inflow_t_fy2025: 2960.4               # purchased material only
+  resource_inflow_t_fy2024: 2884.4
+  resource_secondary_t_fy2025: 375.1
+  resource_total_input_t_fy2025: 3335.5
+  resource_secondary_by_material_t_fy2025:
+    timber: 250
+    hemp: 38
+    sailcloth: 21
+    iron: 64
+    tar: 2.1
+    provisions: 0
+  reused_share_percent_fy2025: 11.2
+  reused_share_percent_fy2024: 10.4
+  reused_share_excluding_provisions_percent_fy2025: 18.5
+  reused_share_excluding_provisions_percent_fy2024: 17.5
+  provisions_share_of_inflow_percent_fy2025: 44.2
+  waste_t_fy2025: 348.4
+  waste_t_fy2024: 307.0
+  waste_by_stream_t_fy2025:
+    ship_breaking_timber: 240.0
+    worn_rope: 42.0
+    cask_staves_and_hoops: 31.0
+    galley_and_kiln_ash: 18.0
+    careening_scrapings_landed: 17.4
+  waste_reused_t_fy2025: 285.4
+  waste_burned_t_fy2025: 58.4
+  waste_landfill_t_fy2025: 4.6
+  waste_reused_share_percent_fy2025: 81.9
+  waste_burned_share_percent_fy2025: 16.8
+  waste_landfill_share_percent_fy2025: 1.3
+  waste_landfill_share_percent_fy2024: 1.7
+  waste_hazardous_t_fy2025: 1.4
+  waste_non_hazardous_t_fy2025: 347.0
+  broken_hull_timber_reused_percent_fy2025: 85.0
+  broken_hull_timber_reused_percent_fy2024: 84.6
+  target_2030_reused_share_percent: 15.0
+  target_2030_reused_share_excluding_provisions_percent: 25.0
+  target_2030_broken_hull_timber_reused_percent: 90.0
+  target_2030_waste_landfill_share_percent: 0.5

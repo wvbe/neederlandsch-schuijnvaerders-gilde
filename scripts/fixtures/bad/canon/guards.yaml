@@ -1,0 +1,2 @@
+- pattern: '\bfleet of (\d[\d,]*)\b'
+  canon_key: scale.fleet_count

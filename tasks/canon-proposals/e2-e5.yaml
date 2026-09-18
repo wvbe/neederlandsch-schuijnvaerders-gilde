@@ -1,0 +1,155 @@
+# Canon proposal from Task 15: every new number introduced by csrd/e2-e5-environment.md.
+# Proposed for the Quartermaster-General's decision; NOT yet canon. Values here are exactly
+# as they are written in the topic file. Quantities reused unchanged from
+# data/e1-activity-data.csv (tar, timber, hemp, sailcloth, iron, provisions) are not
+# repeated here, because they are already held in the data layer.
+
+environment:
+
+  # --- E2 pollution -------------------------------------------------------------
+  tar_boiled_t_fy2025: 29.4                      # = 29,392 kg in the activity data
+  tar_boiled_t_fy2024: 33.4                      # = 33,400 kg in the activity data
+  tar_volatile_loss_t_fy2025: 0.8                # estimate at 2.9% of mass boiled, year-weighted
+  tar_volatile_loss_t_fy2024: 1.5                # estimate at 4.5% of mass boiled, open kilns
+  tar_volatile_loss_factor_open_percent: 4.5     # open kiln
+  tar_volatile_loss_factor_hooded_percent: 2.5   # hooded kiln
+  tar_hooded_share_of_boil_percent_fy2025: 81.1  # Vlissingen, Port Royal an' Ambon hooded the whole year
+  lead_shot_fired_kg_fy2025: 1240
+  lead_shot_fired_kg_fy2024: 1310
+  lead_shot_recovered_kg_fy2025: 795
+  lead_shot_recovered_kg_fy2024: 690
+  lead_shot_recovered_percent_fy2025: 64.1
+  lead_shot_recovered_percent_fy2024: 52.7
+  lead_sheathing_laid_t_fy2025: 4.2
+  lead_sheathing_recovered_t_fy2025: 3.6
+  white_lead_paint_kg_fy2025: 1150
+  white_lead_paint_kg_fy2024: 1320
+  verdigris_kg_fy2025: 85
+  sulphur_t_fy2025: 2.4
+  bilge_pumped_m3_fy2025: 5256
+  bilge_pumped_m3_fy2024: 5402
+  ballast_shifted_m3_fy2025: 868
+  ballast_shifted_m3_fy2024: 892
+  careening_scrapings_kg_fy2025: 17640
+  careening_scrapings_kg_fy2024: 18420
+  careening_scrapings_landed_kg_fy2025: 17360
+  careening_scrapings_landed_kg_fy2024: 18030
+  careening_scrapings_landed_percent_fy2025: 98.4
+  careening_scrapings_landed_percent_fy2024: 97.9
+  discharge_within_league_incidents_fy2025: 1
+  discharge_within_league_incidents_fy2024: 3
+  target_2030_tar_boiled_t: 24.0
+  target_2030_tar_volatile_loss_t: 0.4
+  target_2030_lead_shot_recovered_percent: 90.0
+  target_2030_scrapings_landed_percent: 100.0
+  target_2030_discharge_within_league_incidents: 0
+  target_2030_no_white_lead_paint: true
+
+  # --- E3 water an' marine resources --------------------------------------------
+  water_ration_litre_per_hand_day_at_sea: 4.5
+  water_ration_litre_per_hand_day_ashore: 25
+  yard_water_m3_per_hull_year: 35                # 20 m3 full careen + 3 breamin's at 5 m3
+  water_drawn_m3_fy2025: 11767.0
+  water_drawn_m3_fy2024: 11767.0                 # same establishment, ration an' days at sea
+  water_drawn_at_sea_m3_fy2025: 2204.1
+  water_drawn_ashore_m3_fy2025: 8687.8
+  water_drawn_yard_m3_fy2025: 875.0
+  water_drawn_high_stress_m3_fy2025: 3750.5      # Sainte-Marie an' Ambon
+  water_drawn_high_stress_m3_fy2024: 3750.5
+  water_drawn_high_stress_percent_fy2025: 31.9
+  water_drawn_by_chamber_m3_fy2025:
+    vlissingen: 4260.5
+    baltimore: 1409.8
+    port_royal: 2346.2
+    sainte_marie: 1363.5
+    ambon: 2387.0
+  water_drawn_at_sea_by_hull_class_m3_fy2025:
+    retourschip: 1108.8
+    jacht: 583.2
+    fluyt: 162.0
+    sloep: 315.0
+    galjoot: 35.1
+  high_water_stress_chambers: [sainte_marie, ambon]
+  island_yard_water_from_rainwater_percent_fy2025: 14
+  island_yard_water_from_rainwater_percent_fy2024: 0
+  target_2030_water_drawn_high_stress_m3: 3000
+  target_2030_island_yard_water_from_rainwater_percent: 50
+  marine_resources_extracted: none               # no fish, no whale, no coral, no shell, no seabed
+
+  # --- E4 biodiversity an' ecosystems -------------------------------------------
+  timber_consumed_m3_fy2025: 1634
+  timber_consumed_m3_fy2024: 1597
+  timber_oak_m3_fy2025: 1361
+  timber_teak_m3_fy2025: 273
+  timber_oak_m3_fy2024: 1271
+  timber_teak_m3_fy2024: 326
+  timber_oak_t_fy2025: 980
+  timber_teak_t_fy2025: 180
+  timber_oak_t_fy2024: 915
+  timber_teak_t_fy2024: 215
+  timber_density_oak_t_per_m3: 0.72
+  timber_density_teak_t_per_m3: 0.66
+  careening_hard_ha: 3.7
+  careening_hard_ha_by_chamber:
+    vlissingen: 1.2
+    baltimore: 0.4
+    port_royal: 0.9
+    sainte_marie: 0.7
+    ambon: 0.5
+  careening_hard_on_living_reef_ha: 0
+  sites_in_or_near_biodiversity_sensitive_areas: 5
+  rat_incidents_fy2025: 2
+  rat_incidents_fy2024: 4
+  oak_planted_ha_fy2025: 2.1
+  oak_planted_ha_fy2024: 1.8
+  oak_planted_trees_fy2025: 1450
+  oak_planted_ha_since_2019: 6.8
+  hull_timber_named_replanted_source_percent_fy2025: 96
+  hull_timber_named_replanted_source_percent_fy2024: 94
+  chambers_with_signed_hard_survey_fy2025: 5
+  target_2030_no_reef_careening: true
+  target_2030_rat_incidents: 0
+  target_2030_oak_planted_ha_per_year: 2.0
+  target_2030_hull_timber_named_replanted_source_percent: 100
+  tortoiseshell_stock_held_not_traded: true      # Chamber of Port Royal warehouse, pre-dates the standin' order
+
+  # --- E5 resource use an' circular economy -------------------------------------
+  resource_inflow_t_fy2025: 2960.4               # purchased material only
+  resource_inflow_t_fy2024: 2884.4
+  resource_secondary_t_fy2025: 375.1
+  resource_total_input_t_fy2025: 3335.5
+  resource_secondary_by_material_t_fy2025:
+    timber: 250
+    hemp: 38
+    sailcloth: 21
+    iron: 64
+    tar: 2.1
+    provisions: 0
+  reused_share_percent_fy2025: 11.2
+  reused_share_percent_fy2024: 10.4
+  reused_share_excluding_provisions_percent_fy2025: 18.5
+  reused_share_excluding_provisions_percent_fy2024: 17.5
+  provisions_share_of_inflow_percent_fy2025: 44.2
+  waste_t_fy2025: 348.4
+  waste_t_fy2024: 307.0
+  waste_by_stream_t_fy2025:
+    ship_breaking_timber: 240.0
+    worn_rope: 42.0
+    cask_staves_and_hoops: 31.0
+    galley_and_kiln_ash: 18.0
+    careening_scrapings_landed: 17.4
+  waste_reused_t_fy2025: 285.4
+  waste_burned_t_fy2025: 58.4
+  waste_landfill_t_fy2025: 4.6
+  waste_reused_share_percent_fy2025: 81.9
+  waste_burned_share_percent_fy2025: 16.8
+  waste_landfill_share_percent_fy2025: 1.3
+  waste_landfill_share_percent_fy2024: 1.7
+  waste_hazardous_t_fy2025: 1.4
+  waste_non_hazardous_t_fy2025: 347.0
+  broken_hull_timber_reused_percent_fy2025: 85.0
+  broken_hull_timber_reused_percent_fy2024: 84.6
+  target_2030_reused_share_percent: 15.0
+  target_2030_reused_share_excluding_provisions_percent: 25.0
+  target_2030_broken_hull_timber_reused_percent: 90.0
+  target_2030_waste_landfill_share_percent: 0.5

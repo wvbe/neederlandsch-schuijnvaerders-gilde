@@ -1,0 +1,19 @@
+# Numeric guards: wherever `pattern` matches in prose, capture group 1 (digits, commas allowed)
+# times `multiply` must equal the canon value at `canon_key`. Keep patterns narrow.
+- pattern: '\bfleet of (\d[\d,]*)\b'
+  canon_key: scale.fleet_count
+- pattern: '\b(\d[\d,]*) wooden (?:ships|hulls|vessels)\b'
+  canon_key: scale.fleet_count
+- pattern: '\b(\d[\d,]*) (?:chambers|bases) of operation'
+  canon_key: scale.base_count
+- pattern: '\bfounded (?:in|at|anno) (\d{4})\b'
+  canon_key: company.founded_year
+- pattern: '\b(\d[\d,]*) seagoing (?:souls|crew|hands)\b'
+  canon_key: scale.seagoing_headcount
+- pattern: '\b(\d[\d,]*) (?:souls|hands) ashore\b'
+  canon_key: scale.shore_headcount
+- pattern: '\b(\d[\d,]*) souls (?:in all|all told)\b'
+  canon_key: scale.total_headcount
+- pattern: '\bturnover of (?:EUR|€) ?(\d[\d,]*) ?million\b'
+  canon_key: scale.turnover_eur_reported_year
+  multiply: 1000000

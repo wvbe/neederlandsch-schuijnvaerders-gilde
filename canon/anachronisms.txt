@@ -1,0 +1,106 @@
+# Words and phrases the Gilde may not use as its own technology or tooling.
+# One entry per line; matched as whole words or phrases, case-insensitive, in prose only.
+# A file may allow an entry in its frontmatter (allow-anachronisms: [...]) when a regulator's
+# term must be quoted, for example "electricity" in the Scope 2 explanation.
+# Propulsion and machinery
+engine
+engines
+motor
+motors
+diesel
+petrol
+gasoline
+kerosene
+steam engine
+steamship
+steamer
+propeller
+turbine
+outboard
+# Communication and computing
+radio
+radar
+sonar
+telegraph
+telephone
+phone
+smartphone
+email
+e-mail
+internet
+website
+online
+computer
+laptop
+software
+app
+satellite
+GPS
+spreadsheet
+PDF
+upload
+download
+login
+password
+# Power and light
+electricity
+electric
+electrical
+lightbulb
+light bulb
+battery
+batteries
+generator
+# Materials
+plastic
+plastics
+nylon
+polyester
+fibreglass
+fiberglass
+kevlar
+aluminium
+aluminum
+steel hull
+welding
+concrete
+asphalt
+rubber
+# Transport and cargo handling
+container ship
+shipping container
+containerised
+containerized
+forklift
+railway
+railroad
+truck
+lorry
+automobile
+aircraft
+airplane
+aeroplane
+helicopter
+drone
+jet
+submarine
+# Instruments and records that came later
+chronometer
+sextant
+photograph
+photo
+camera
+typewriter
+refrigerator
+refrigeration
+freezer
+canned
+tin can
+dynamite
+torpedo
+machine gun
+# Later than 1700 (from the research dossier)
+grog
+octant
+ship's wheel
+copper sheathing

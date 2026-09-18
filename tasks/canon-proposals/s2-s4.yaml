@@ -1,0 +1,113 @@
+# Canon proposals from Task 17, csrd/s2-s4-value-chain-communities.md.
+# Every number introduced by that file, exactly as the file states it. The
+# Quartermaster-General decides what enters canon/facts.yaml; nothing here is canon yet.
+# Period: FY2025, the reporting year key 102024-092025.
+
+social_value_chain:
+
+  # --- S2: workers in the value chain -------------------------------------
+  value_chain_workers_estimate: 1630          # estimate, not a payroll; sum of the breakdown below
+  value_chain_workers_breakdown:
+    hemp_growers_and_ropewalks: 90            # Zeeland about Vlissingen, West Cork about Baltimore
+    sawyers_raftsmen_forest_hands: 210        # Rhine rafts, Norway, the Baltic
+    canvas_weavers_and_sail_loft_outworkers: 120
+    coopers_and_cask_yards: 70
+    victuallers: 240
+    spice_growers_and_agents: 380             # Ambon, Banda, Ternate
+    sandalwood_growers_and_pearl_shell_divers: 150
+    tar_burners_and_iron: 60
+    dock_labour_ports_of_call: 300
+    notary_clerk_and_landsmen_trades: 10
+  spice_premium_percent_fy2025: 12            # paid above the going rate at Ambon, set with the growers' season council
+
+  seized_vessel_crew_fy2025: 168              # seafarers aboard the 9 marks stopped; sum of the breakdown
+  seized_vessel_crew_breakdown_fy2025:
+    good_prize_sold_at_auction: 81            # 4 vessels
+    good_prize_released_against_ransom_bill: 22   # 1 vessel
+    restitution_ordered: 35                   # 2 vessels
+    released_on_the_spot: 30                  # 2 vessels
+  seized_crew_treated_by_surgeon_fy2025: 4
+  seized_crew_passage_home_paid_fy2025: 63    # at the client's cost
+  seized_crew_deaths_or_grave_injuries_fy2025: 0
+
+  seized_crew_complaints_fy2025: 11           # all closed within the year
+  seized_crew_complaints_breakdown_fy2025:
+    chests_and_tools_sealed_with_cargo: 4
+    wages_lost_for_the_detention: 3
+    door_forced_or_locker_broken: 2
+    landed_further_than_nearest_port: 1
+    water_short_on_passage_in: 1
+  seized_crew_remedy_paid_eur_fy2025: 11200
+  seized_crew_remedy_chest_paid_eur_fy2025: 1400      # one chest lost overboard
+  seized_crew_wages_paid_eur_fy2025: 9800             # at the client's cost
+
+  suppliers_on_register_fy2025: 63
+  suppliers_visited_fy2025: 29
+  supplier_visits_fy2025: 34
+  supplier_hands_mustered_fy2025: 412
+  supplier_findings_under_age_fy2025: 0
+  supplier_findings_held_against_will_fy2025: 0
+  supplier_findings_wages_late_fy2025: 2
+  supplier_wage_arrears_paid_eur_fy2025: 3100
+  value_chain_complaints_total_fy2025: 13     # 11 seized-crew complaints plus 2 supplier findings
+
+  target_2027_supplier_visits: 45
+  target_2027_supplier_coverage_two_years_percent: 100
+  target_2027_ropewalk_code: true             # a written rope-walk an' sawmill code, drafted in FY2025, unsigned
+  target_2027_seized_crew_complaint_days: 30
+
+  # --- S3: affected communities -------------------------------------------
+  port_hearings_fy2025: 19
+  port_hearings_by_chamber_fy2025:
+    vlissingen: 4
+    baltimore: 3
+    port_royal: 4
+    sainte_marie: 4
+    ambon: 4
+
+  fpic_consultations_fy2025: 7                # free, prior and informed consent sought
+  fpic_consultations_breakdown_fy2025:
+    sainte_marie_water_lease: 1               # village council of Ambodifotatra
+    pacific_run_island_groups: 4              # Bismarck Archipelago, Solomon Islands, Caroline Islands, Fiji
+    moluccas_grower_councils: 2               # Banda, Ternate
+  fpic_consent_given_fy2025: 6
+  fpic_consent_refused_fy2025: 1              # an anchorage in the Caroline Islands; the jacht went elsewhere
+
+  port_claims_fy2025: 23
+  port_claims_paid_eur_fy2025: 61500
+  port_claims_by_chamber_fy2025:
+    vlissingen: 9                             # tar smoke
+    baltimore: 3                              # moorings in regatta week
+    port_royal: 5                             # powder days and the landing lost to a seizure
+    sainte_marie: 4                           # water and market
+    ambon: 2                                  # waterfront
+  port_claims_paid_eur_by_chamber_fy2025:
+    vlissingen: 21000
+    baltimore: 4500
+    port_royal: 12000
+    sainte_marie: 14000
+    ambon: 10000
+  port_claims_paid_in_part_fy2025: 2          # Vlissingen; the smoke shared with a kiln not the Gilde's
+  third_party_trade_disrupted_prizes_fy2025: 1   # one prize carried goods consigned to a trader ashore at Port Royal
+
+  target_2028_vlissingen_tar_smoke_claims: 3
+  target_2027_port_hearings_per_chamber: 4
+  target_2027_port_claim_closure_days: 60
+
+  # --- S4: consumers and end-users ----------------------------------------
+  consignees_fy2025: 47                       # spice houses, collectors, island buyers
+  interdiction_clients_fy2025: 6              # holding the year's 9 commissions
+  prize_auctions_fy2025: 6                    # at the Chamber of Port Royal
+  auction_registered_buyers_fy2025: 214
+  auction_origin_statement_items: 5
+  tortoiseshell_held_kg: 118                  # old stock of documented provenance, held and not traded
+
+  consumer_complaints_fy2025: 6               # all closed
+  consumer_complaints_breakdown_fy2025:
+    weight_short_against_manifest: 2          # honest shrinkage on a 150-day passage
+    cask_tainted_by_tar: 1                    # upheld
+    provenance_papers_not_with_parcel: 1      # delivery held 19 days
+    origin_statement_at_auction: 2
+  consumer_complaint_replacement_paid_eur_fy2025: 6200   # the tainted mace
+  consumer_complaint_delivery_held_days_fy2025: 19
+  consumer_complaints_substitution_or_false_mark_fy2025: 0
