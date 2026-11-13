@@ -1108,3 +1108,79 @@ policies:
     accountable: "Captain-General"
     carried_out_by: "Captain-General, countersigned by the Quartermaster-General"
     file: "policies/g1-political-engagement.md"
+
+# Financial statements; line items in data/financials.csv (EUR thousand), stated in the annual
+# reports under financial-reports/. Added 2026-11-13 for the FY2023 to FY2025 annual reports.
+financials:
+  framework: "Part 9 of Book 2 of the Dutch Civil Code and the Dutch Accounting Standards"
+  presentation_unit: "EUR thousand"
+  functional_currency: "EUR"                     # every chamber keeps its books in EUR; freight and prizes are priced in EUR
+  reports: [FY2023, FY2024, FY2025]
+  turnover_eur_fy2022: 429300000
+  turnover_eur_fy2023: 446000000                 # FY2024 and FY2025 are scale.turnover_eur_base_year and scale.turnover_eur_reported_year
+  operating_result_eur_fy2022: 77900000
+  operating_result_eur_fy2023: 82300000
+  operating_result_eur_fy2024: 86100000
+  operating_result_eur_fy2025: 94600000
+  net_result_eur_fy2021: 54000000
+  net_result_eur_fy2022: 58600000
+  net_result_eur_fy2023: 62600000
+  net_result_eur_fy2024: 66250000
+  net_result_eur_fy2025: 72400000
+  group_equity_eur_fy2021: 286600000
+  group_equity_eur_fy2022: 312800000
+  group_equity_eur_fy2023: 340200000
+  group_equity_eur_fy2024: 368850000
+  group_equity_eur_fy2025: 401450000
+  total_assets_eur_fy2022: 386150000
+  total_assets_eur_fy2023: 415900000
+  total_assets_eur_fy2024: 445800000
+  total_assets_eur_fy2025: 479850000
+  cash_eur_fy2022: 142850000
+  cash_eur_fy2023: 167400000
+  cash_eur_fy2024: 192300000
+  cash_eur_fy2025: 220250000
+  dividend_payout_percent: 60                    # of the net result, paid in the following Kermis year
+  dividend_proposed_eur_fy2023: 37600000
+  dividend_proposed_eur_fy2024: 39800000
+  dividend_proposed_eur_fy2025: 43400000
+  borrowings_eur: 0                              # no borrowing at any year end FY2021 to FY2025
+  hull_insurance: "none; no underwriter insures a wooden hull under sail at a price the Gilde will pay, so the hulls are self-insured"
+  hull_reserve_eur: 50000000                     # statutory reserve, twice the cost of laying down a retourschip
+  retourschip_keel_cost_eur: 25000000            # present cost of building one retourschip on the Schelde hard
+  share_capital_eur: 1621000
+  share_count: 16210                             # registered shares of EUR 100
+  share_nominal_eur: 100
+  shareholder: "Stichting Administratiekantoor Alle Hands"
+  shareholder_gloss: "All Hands Trust Office Foundation"
+  shareholder_since: 1929                        # set up at the reincorporation as N.V.
+  shareholder_note: "holds every share in trust for the enrolled hands; votes at the general meeting as the Kermis parley of all hands directs, one hand one vote; credits each dividend in equal parts to the accounts of the hands enrolled on 30 September of the year it was earned, paid out when a hand leaves the articles"   # a deferred account, not pay: it does not enter the S1 adequate-wage count
+  auditor: "De Drie Sleutels Accountants B.V."
+  auditor_seat: "Middelburg"
+  materiality_eur_fy2023: 4150000
+  materiality_eur_fy2024: 4400000
+  materiality_eur_fy2025: 4800000                # about 5% of the result before tax
+  signed_on_fy2023: "2023-10-27"                 # at the October Muster after the year end
+  signed_on_fy2024: "2024-10-25"
+  signed_on_fy2025: "2025-10-24"
+  headcount_year_end_fy2021: 2222
+  headcount_year_end_fy2022: 2240
+  headcount_year_end_fy2023: 2256                # FY2024 and FY2025 are s1.total_headcount_fy2024 and scale.total_headcount
+  average_headcount_fy2022: 2231
+  average_headcount_fy2023: 2248
+  average_headcount_fy2024: 2264
+  average_headcount_fy2025: 2283
+  effective_tax_rate_percent_fy2023: 24.6
+  effective_tax_rate_percent_fy2024: 24.5
+  effective_tax_rate_percent_fy2025: 24.5
+  pillar_two: "consolidated revenue below EUR 750 million; outside the Minimum Tax Act 2024"
+  tortoiseshell_carrying_value_eur: 0            # social_value_chain.tortoiseshell_held_kg, held and not traded, carried at nil
+  commissions_served_fy2022: {total: 10, good_prize: 6, restitution: 2, released: 2}
+  commissions_served_fy2023: {total: 11, good_prize: 6, restitution: 3, released: 2}
+  commissions_served_fy2024: {total: 8, good_prize: 5, restitution: 1, released: 2}   # FY2025 is operations.commissions_served_fy2025
+  hurts_fy2022: 61
+  fatalities_fy2022: 0
+  hurts_fy2023: 58                               # recordable hurts; FY2024 and FY2025 are s1.hurts_fy2024 and s1.hurts_fy2025
+  fatalities_fy2023: 0
+  matanzas_payments_count_fy2023: 10
+  matanzas_payments_eur_fy2023: 128000

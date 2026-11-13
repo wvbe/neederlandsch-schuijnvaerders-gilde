@@ -21,6 +21,7 @@ voice.
 - `csrd/` — the ESRS knowledge base, one file per topic, plus the Salacia mapping.
 - `data/` — structured registers (bases, fleet, workforce, activity data, materiality).
 - `agents/` — the reporting playbook and worked examples.
+- `financial-reports/` — the annual reports and consolidated financial statements for FY2023, FY2024 and FY2025, drawn from `data/financials.csv` and canon `financials`.
 - `tasks/plan.md` — the implementation plan; `tasks/decisions-open-questions.md` — decisions and their historical grounding.
 
 ## Checking consistency

@@ -1,0 +1,90 @@
+statement,line_key,line_label,unit,fy2021,fy2022,fy2023,fy2024,fy2025
+income_statement,revenue_freight,Freight earned,EUR thousand,,361800,374200,389500,407000
+income_statement,revenue_letters_of_marque,Letters of Marque Division,EUR thousand,,55600,59100,57800,58400
+income_statement,revenue_chamber_services,"Chamber services (auction house, victualling, careening for others)",EUR thousand,,11900,12700,13700,14600
+income_statement,net_turnover,Net turnover,EUR thousand,,429300,446000,461000,480000
+income_statement,cost_voyage,"Voyage costs (victuals, water, powder, port dues, pilotage, Prize Council fees)",EUR thousand,,112400,115900,118300,121400
+income_statement,cost_materials_and_yard,"Materials, careening and repairs (timber, hemp, sailcloth, tar, iron)",EUR thousand,,66100,68300,70900,72600
+income_statement,cost_crew_shares,Crew shares,EUR thousand,,76800,79600,81900,84200
+income_statement,cost_floor_and_hardship,"Floor payments, hardship chest and Matanzas schedule",EUR thousand,,9100,9600,10700,11300
+income_statement,cost_shore_wages,Shore wages,EUR thousand,,14300,14800,15200,15600
+income_statement,cost_social_charges_and_pensions,Social security charges and pensions,EUR thousand,,16400,16900,17400,17900
+income_statement,cost_depreciation,Depreciation of tangible fixed assets,EUR thousand,,15100,15500,15900,16400
+income_statement,cost_other_operating,Other operating expenses,EUR thousand,,41200,43100,44600,46000
+income_statement,personnel_costs,Personnel costs,EUR thousand,,116600,120900,125200,129000
+income_statement,operating_expenses,Total operating expenses,EUR thousand,,351400,363700,374900,385400
+income_statement,operating_result,Operating result,EUR thousand,,77900,82300,86100,94600
+income_statement,financial_income,Interest and similar income,EUR thousand,,200,1400,2300,2000
+income_statement,financial_expense,"Interest, bank charges and exchange differences",EUR thousand,,-600,-700,-650,-700
+income_statement,financial_result,Financial income and expense,EUR thousand,,-400,700,1650,1300
+income_statement,result_before_tax,Result before tax,EUR thousand,,77500,83000,87750,95900
+income_statement,corporate_income_tax,Corporate income tax,EUR thousand,,-18900,-20400,-21500,-23500
+income_statement,net_result,Net result,EUR thousand,,58600,62600,66250,72400
+balance_sheet,hulls_rig_and_guns,"Hulls, rig and guns",EUR thousand,101400,102200,103500,105100,107000
+balance_sheet,land_yards_and_buildings,"Land, yards, ropewalk and buildings",EUR thousand,58600,59500,60600,61700,63100
+balance_sheet,tangible_fixed_assets,Tangible fixed assets,EUR thousand,160000,161700,164100,166800,170100
+balance_sheet,deferred_tax_assets,Deferred tax assets,EUR thousand,1100,1100,1100,1100,1100
+balance_sheet,fixed_assets,Total fixed assets,EUR thousand,161100,162800,165200,167900,171200
+balance_sheet,inventories,"Naval stores, seasoning timber and provisions",EUR thousand,33800,34900,35700,36600,37400
+balance_sheet,trade_receivables,Trade receivables,EUR thousand,36100,37000,38500,39600,41200
+balance_sheet,other_receivables,"Other receivables, prize proceeds due and prepayments",EUR thousand,8200,8600,9100,9400,9800
+balance_sheet,cash,Cash at bankers and in the strongrooms,EUR thousand,118000,142850,167400,192300,220250
+balance_sheet,current_assets,Total current assets,EUR thousand,196100,223350,250700,277900,308650
+balance_sheet,total_assets,Total assets,EUR thousand,357200,386150,415900,445800,479850
+balance_sheet,share_capital,Issued share capital,EUR thousand,1621,1621,1621,1621,1621
+balance_sheet,hull_reserve,Hull reserve,EUR thousand,50000,50000,50000,50000,50000
+balance_sheet,other_reserves,Other reserves,EUR thousand,180979,202579,225979,250979,277429
+balance_sheet,unappropriated_result,Unappropriated result,EUR thousand,54000,58600,62600,66250,72400
+balance_sheet,group_equity,Group equity,EUR thousand,286600,312800,340200,368850,401450
+balance_sheet,provision_hurts_and_claims,Provision for hurts and claims,EUR thousand,1900,2000,2100,2200,2100
+balance_sheet,deferred_tax_liabilities,Deferred tax liabilities,EUR thousand,6300,6500,6800,7100,7400
+balance_sheet,provisions,Total provisions,EUR thousand,8200,8500,8900,9300,9500
+balance_sheet,trade_payables,Trade payables,EUR thousand,16400,16900,16800,16700,15800
+balance_sheet,crew_shares_payable,Crew shares payable,EUR thousand,6100,6300,6500,6700,6900
+balance_sheet,officers_fifth_withheld,Officers' fifth withheld,EUR thousand,1600,1650,1700,1750,1800
+balance_sheet,freight_received_in_advance,Freight received in advance,EUR thousand,19800,20400,21100,21900,22800
+balance_sheet,client_prize_shares_payable,Client shares of prizes payable,EUR thousand,2400,2900,3300,2600,2800
+balance_sheet,corporate_income_tax_payable,Corporate income tax payable,EUR thousand,4200,4500,4800,5100,5500
+balance_sheet,other_taxes_and_social_security,Other taxes and social security,EUR thousand,4700,4800,4900,5000,5100
+balance_sheet,other_liabilities_and_accruals,Other liabilities and accruals,EUR thousand,7200,7400,7700,7900,8200
+balance_sheet,current_liabilities,Total current liabilities,EUR thousand,62400,64850,66800,67650,68900
+balance_sheet,total_equity_and_liabilities,Total equity and liabilities,EUR thousand,357200,386150,415900,445800,479850
+cash_flow,cf_operating_result,Operating result,EUR thousand,,77900,82300,86100,94600
+cash_flow,cf_depreciation,Depreciation,EUR thousand,,15100,15500,15900,16400
+cash_flow,cf_change_provisions,Change in provision for hurts and claims,EUR thousand,,100,100,100,-100
+cash_flow,cf_change_inventories,Change in inventories,EUR thousand,,-1100,-800,-900,-800
+cash_flow,cf_change_receivables,Change in receivables,EUR thousand,,-1300,-2000,-1400,-2000
+cash_flow,cf_change_current_liabilities,Change in current liabilities (excluding corporate income tax),EUR thousand,,2150,1650,550,850
+cash_flow,cf_from_business_operations,Cash flow from business operations,EUR thousand,,92850,96750,100350,108950
+cash_flow,cf_interest_received,Interest received,EUR thousand,,200,1400,2300,2000
+cash_flow,cf_interest_paid,"Interest, bank charges and exchange differences paid",EUR thousand,,-600,-700,-650,-700
+cash_flow,cf_tax_paid,Corporate income tax paid,EUR thousand,,-18400,-19800,-20900,-22800
+cash_flow,cf_operating,Cash flow from operating activities,EUR thousand,,74050,77650,81100,87450
+cash_flow,cf_capex_hulls,"Investment in hulls, rig and guns",EUR thousand,,-13500,-14300,-14900,-15600
+cash_flow,cf_capex_buildings,"Investment in land, yards and buildings",EUR thousand,,-3300,-3600,-3700,-4100
+cash_flow,cf_investing,Cash flow from investing activities,EUR thousand,,-16800,-17900,-18600,-19700
+cash_flow,cf_dividend_paid,Dividend paid,EUR thousand,,-32400,-35200,-37600,-39800
+cash_flow,cf_financing,Cash flow from financing activities,EUR thousand,,-32400,-35200,-37600,-39800
+cash_flow,cf_net_change,Net change in cash,EUR thousand,,24850,24550,24900,27950
+notes,dividend_paid,"Dividend paid in the year, on the prior year's result",EUR thousand,,32400,35200,37600,39800
+notes,dividend_proposed,Dividend proposed on the year's result,EUR thousand,,35200,37600,39800,43400
+notes,capex_total,Investment in tangible fixed assets,EUR thousand,,16800,17900,18600,19700
+notes,dep_hulls,"Depreciation of hulls, rig and guns",EUR thousand,,12700,13000,13300,13700
+notes,dep_buildings,"Depreciation of land, yards and buildings",EUR thousand,,2400,2500,2600,2700
+notes,turnover_baltimore,"Net turnover, baltimore",EUR thousand,,26200,27200,28100,29300
+notes,turnover_port_royal,"Net turnover, port_royal",EUR thousand,,95300,99000,102300,106600
+notes,turnover_sainte_marie,"Net turnover, sainte_marie",EUR thousand,,33500,34800,36000,37400
+notes,turnover_ambon,"Net turnover, ambon",EUR thousand,,77700,80700,83400,86900
+notes,turnover_vlissingen,"Net turnover, vlissingen",EUR thousand,,196600,204300,211200,219800
+notes,freight_valuables,"Freight earned, valuables",EUR thousand,,119400,123500,128500,134300
+notes,freight_exotic_materials,"Freight earned, exotic materials",EUR thousand,,54300,56100,58400,61000
+notes,freight_spices,"Freight earned, spices",EUR thousand,,188100,194600,202600,211700
+notes,remuneration_raad,Remuneration of the Raad van Kapiteins (25 captains),EUR thousand,,1990,2050,2110,2175
+notes,remuneration_heeren_vijf,Remuneration of De Heeren Vijf,EUR thousand,,175,175,180,180
+notes,audit_fee_financial_statements,"Auditor's fee, audit of the financial statements",EUR thousand,,340,355,370,385
+notes,audit_fee_sustainability_assurance,"Auditor's fee, assurance of the sustainability statement",EUR thousand,,0,0,0,140
+notes,cost_hulls_rig_and_guns,"Hulls, rig and guns at cost",EUR thousand,214000,227500,241800,256700,272300
+notes,accumulated_depreciation_hulls_rig_and_guns,"Hulls, rig and guns, accumulated depreciation",EUR thousand,112600,125300,138300,151600,165300
+notes,cost_land_yards_and_buildings,"Land, yards and buildings at cost",EUR thousand,96400,99700,103300,107000,111100
+notes,accumulated_depreciation_land_yards_and_buildings,"Land, yards and buildings, accumulated depreciation",EUR thousand,37800,40200,42700,45300,48000
+notes,lease_commitments,Lease commitments at year end,EUR thousand,,13400,12900,12300,11800
