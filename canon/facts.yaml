@@ -17,6 +17,9 @@ company:
   reincorporated_nv_year: 1929                 # re-incorporated as N.V. under the Dutch company law of 1928
   founding_prize: "Piet Heyn's silver fleet, Matanzas Bay, 8 September 1628"
   age_in_2026: 405
+  motto: "VENTO SOLO"                          # Latin, always in capitals and never translated in display; adopted 2026-11-13
+  motto_gloss: "by wind alone"                 # given once, in brackets, like the English gloss of the name
+  motto_language: "Latin"
 
 reporting:
   fiscal_year_start_month: 10

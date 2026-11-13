@@ -1,8 +1,8 @@
 ---
 title: Brand Guidelines o' the Neederlandsch Schuijnvaerders Gilde
 status: draft
-last-verified: 2026-09-18
-canon-refs: [company.legal_name, company.abbreviation, company.trade_name_english, company.english_gloss, scale.fleet_count, scale.base_count, company.founded_year]
+last-verified: 2026-11-13
+canon-refs: [company.legal_name, company.abbreviation, company.trade_name_english, company.english_gloss, company.motto, company.motto_gloss, scale.fleet_count, scale.base_count, company.founded_year]
 allow-anachronisms: [engines]  # named once, as the thing the Gilde lacks, in the on-brand example
 ---
 
@@ -18,8 +18,13 @@ between the Low Countries, the British an' Irish coasts, the Caribbean, the Indi
 the spice islands an' the wide Pacific. An' when a client holds a commissie against a
 rival's freight, we be the ones who serve it.
 
+**Motto.** **VENTO SOLO** (by wind alone). Latin, in capitals, with a raised point between
+the words where the letterin' allows: VENTO · SOLO. It rides the ribbon o' the coat o' arms.
+Never translate it in display; give the gloss once, in brackets, an' then leave it be, as
+with our name.
+
 **Mission.** *To carry what others dare not, by wind alone, under articles every hand has
-signed.*
+signed.* The motto be the mission cut down to two words.
 
 **Promise to the client.** Yer cargo arrives, or the Gilde pays the share. Yer commissie
 be served within the articles, or not at all.
@@ -48,31 +53,32 @@ The flag be the mark on every hull, every warehouse door an' every document's co
 - **Field:** tar black, the whole cloth.
 - **Bend:** a band o' indigo from the lower hoist to the upper fly — the *schuijn*, the
   slant that names us.
-- **Charge:** a lead-white fluyt heelin' hard to leeward, set over the bend, sails full.
+- **Charge:** a lead-white fluyt heelin' on a runnin' sea, set over the bend, sails full.
 - **Hoist:** five minium-orange rings in a column, one for each chamber; the top ring be
   Vlissingen.
 
-The drawin' be in [`assets/flag.svg`](assets/flag.svg). Reproduce it in these four colours
-only. On a black ground the rings may be omitted for very small marks (a wax seal, a hull
-number), never the ship.
+The drawin' to follow be the [shield](shield.png), the heart o' the
+[coat o' arms](coat-of-arms.png) drawn on its own; where these words an' the arms disagree,
+the arms win. On a black ground the rings may be omitted for
+very small marks (a wax seal, a hull number), never the ship.
 
-## 4. Colours
+## 4. The coat o' arms
 
-Named for the pigments a 1650 sailmaker or painter would have mixed, given with modern
-values for landsmen's screens an' presses.
+The coat o' arms be the Gilde's ceremonial mark: the front page o' this knowledge base, the
+cover o' the reckonin' o' the year an' the brand book. The flag stays the everyday mark on
+hull, door an' document. The drawin' be [`coat-of-arms.png`](coat-of-arms.png).
 
-| Name | Pigment | Value | Use |
-| --- | --- | --- | --- |
-| Tar Black | lamp black bound in tar | #1B1A17 | Flag field, body text, hull marks |
-| Indigo Bend | indigo (imported from the Indies we sail to) | #2E3A5F | The bend, headings, rules |
-| Lead White | lead white (loodwit) | #E9E4D6 | Paper an' sailcloth grounds, the ship on the flag |
-| Minium Orange | red lead (menie) | #C8501E | The five rings, warnings, the seal |
-| Verdigris | copper green | #5C8A6B | Tables o' the environment topics, "on course" marks |
-| Ochre | yellow ochre | #B9975B | Ledger rules, secondary text, the guilder column |
-| Vermilion | cinnabar | #9E2A2B | Injuries an' incidents; never decorative |
+- **Shield:** the flag itself: a dark field, the bend risin' from the lower hoist to the
+  upper fly, the fluyt heelin' over it on a runnin' sea, an' the five rings down the hoist.
+- **Crest:** a crown upon the shield; above it the NSG monogram on a merchant's staff an'
+  cross-bar, set between ANNO an' 1621.
+- **Supporters:** two lions rampant, crowned, holdin' the shield.
+- **Mantlin':** acanthus leaves, engraved.
+- **Motto:** VENTO · SOLO on a ribbon beneath the shield.
+- **Name:** the Gilde's name on a tablet below the ribbon, an' *Vlissingen* beneath it.
 
-Never use a blue brighter than Indigo Bend: the bright Prussian blue o' later centuries
-did not exist in our founders' day an' looks wrong on our cloth.
+Reproduce the arms whole, from the master file; never redraw a part of it. Below 30 mm or
+120 px use the [shield](shield.png) alone, from its own master file, never the arms shrunk.
 
 ## 5. Type
 

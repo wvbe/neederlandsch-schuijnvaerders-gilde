@@ -1,8 +1,8 @@
 ---
 title: Voice an' Language — how the Gilde speaks
 status: draft
-last-verified: 2026-09-18
-canon-refs: [company.short_name, company.abbreviation, company.trade_name_english, scale.fleet_count]
+last-verified: 2026-11-13
+canon-refs: [company.short_name, company.abbreviation, company.trade_name_english, scale.fleet_count, company.motto, company.motto_gloss]
 allow-anachronisms: [engine, engines, electricity]  # named only as the things the articles forbid, in the register examples
 ---
 
@@ -39,6 +39,7 @@ Quartermaster-General will have words with ye.
 | YAML keys, CSV headers, file names, frontmatter | Plain English, lower case | `shore_headcount` |
 | Scope 1, Scope 2, Scope 3 | Untouched | Scope 1 |
 | Quoted law an' regulation | Verbatim | Directive (EU) 2022/2464 |
+| The motto | Latin, in capitals, gloss once in brackets | VENTO SOLO (by wind alone) |
 
 Everything **around** those tokens be pirate speak. A table's header row be machine layer;
 its cells may carry a short pirate phrase where a phrase belongs.
@@ -228,7 +229,7 @@ ethnic group, an' no joke rests on one.
 
 ## Related
 
-- [Brand guidelines](brand-guidelines.md) — flag, colours, type, naming
+- [Brand guidelines](brand-guidelines.md) — flag, coat o' arms, type, naming
 - [Research dossier](../lore/research/real-pirate-practices.md) — the record the voice leans on
 - [Canon](../canon/facts.yaml) — the numbers an' names
 - [Decisions](../tasks/decisions-open-questions.md) — why the Gilde be shaped as it be

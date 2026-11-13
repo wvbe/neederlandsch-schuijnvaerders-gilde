@@ -396,8 +396,7 @@ the flag (described precisely enough to draw), colour palette named in period pi
 with modern hex values for designers, typography direction (blackletter or Dutch baroque
 for display, a readable serif for body), logo description and usage rules, naming
 conventions for ships, documents and bases, tone by audience (clients, crews, regulators,
-port authorities), and examples of on-brand and off-brand copy. Optionally an SVG flag in
-`brand/assets/`.
+port authorities), and examples of on-brand and off-brand copy.
 
 **Acceptance criteria:**
 - [ ] Palette has at least 5 colours with pigment name, hex, and usage.
@@ -409,7 +408,7 @@ port authorities), and examples of on-brand and off-brand copy. Optionally an SV
 - [ ] Manual check: the flag description can be reproduced by someone who has not read the lore.
 
 **Dependencies:** Tasks 4, 5 (Task 7 for naming conventions)
-**Files likely touched:** `brand/brand-guidelines.md`, `brand/assets/flag.svg` (optional)
+**Files likely touched:** `brand/brand-guidelines.md`
 **Estimated scope:** S
 
 ### Checkpoint B — The company

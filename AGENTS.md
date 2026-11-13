@@ -36,7 +36,7 @@ Every word the Gilde says is pirate speak, in one of three registers defined in
 
 Numbers, units, currency codes (EUR), ISO dates, Salacia period keys (`102024-092025`),
 ESRS codes and datapoint names (E1-6, GOV-1), legal entity names, place names, ISO country
-codes, people's names and titles of office, Scope 1/2/3, quoted law, and all YAML keys,
+codes, people's names and titles of office, Scope 1/2/3, quoted law, the motto (VENTO SOLO), and all YAML keys,
 CSV headers, table header rows, frontmatter and file names. The full table is section 1 of
 `brand/voice-and-language.md`. If a token is machine-readable, leave it alone.
 

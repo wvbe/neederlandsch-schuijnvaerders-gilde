@@ -1,3 +1,5 @@
+![Coat of arms of the Neederlandsch Schuijnvaerders Gilde: a fluyt heeling over the bend on a shield with five rings, held by two crowned lions, the NSG merchant's mark above and the motto VENTO SOLO below](brand/coat-of-arms.png)
+
 # Neederlandsch Schuijnvaerders Gilde — knowledge base
 
 Ahoy. This repository is the single source of truth for the **Neederlandsch Schuijnvaerders
