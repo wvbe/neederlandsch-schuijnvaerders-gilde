@@ -10,7 +10,7 @@ Self-test: uv run scripts/check_canon.py --self-test
 
 Checks, in order:
   1. canon/facts.yaml parses; TBD values are listed (a failure only with --strict-tbd).
-  2. Every Markdown file under brand/, lore/, csrd/, agents/ has frontmatter with
+  2. Every Markdown file under brand/, lore/, csrd/, agents/, policies/ has frontmatter with
      title, status, last-verified and canon-refs; every canon-ref exists in canon and
      its value appears in the body.
   3. No word or phrase from canon/anachronisms.txt appears in prose (whole word,
@@ -42,7 +42,7 @@ except ImportError:  # pragma: no cover
     )
     sys.exit(2)
 
-PROSE_DIRS = ("brand", "lore", "csrd", "agents")
+PROSE_DIRS = ("brand", "lore", "csrd", "agents", "policies")
 RECORD_DIRS = ("lore/research",)  # plain-English record of real history: frontmatter and links only
 ROOT_PROSE_FILES = ("AGENTS.md", "README.md")
 REQUIRED_FM = ("title", "status", "last-verified", "canon-refs")

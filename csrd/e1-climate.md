@@ -1,7 +1,7 @@
 ---
 title: E1 Climate Change — the warmin' o' the seas
 status: draft
-last-verified: 2026-09-18
+last-verified: 2026-11-13
 canon-refs:
   - company.legal_name
   - scale.fleet_count
@@ -96,6 +96,9 @@ Both orders apply to all 5 chambers of operation and to every hull enrolled at t
 Quartermaster-General is accountable for the Vow; each chamber's Harbourmaster is
 accountable for the two standin' orders at their hard. No exemption was granted in FY2025.
 
+The Vow is written out in full as [POL-E1](../policies/e1-climate.md), adopted by the Kermis
+Council of October 2026, with its scope, commitments, actions to FY2030 and marks to 2050.
+
 ## E1-3 Actions
 
 What we did in the reportin' year, with the resource each took.
@@ -123,6 +126,7 @@ What we did in the reportin' year, with the resource each took.
 
 Nothin' was undone in the year, and no action was abandoned. The kiln hoods at Baltimore
 and Sainte-Marie were raised late, in September 2025, and their effect falls in FY2026.
+The actions planned for FY2026 to FY2030 are listed in [POL-E1](../policies/e1-climate.md).
 
 ## E1-4 Targets
 
@@ -147,6 +151,10 @@ on the whole figure.
 Carriage for the year is reckoned at 78 million tonne-nmi (FY2024: 74 million), derived
 from the burden of each hull in [the fleet register](../lore/fleet.md), her laden fraction
 and her voyage book. That figure be held in canon as `e1.cargo_tonne_nmi_fy2025` an' `e1.cargo_tonne_nmi_fy2024`.
+
+The year-by-year milestones from FY2026 to FY2030, a third mark for the renewable share of
+energy, and the source-by-source costing of the 110 are set out in
+[POL-E1](../policies/e1-climate.md) and held in [the target register](../data/targets.csv).
 
 ## E1-5 Energy
 
@@ -343,4 +351,5 @@ estimated where a tally exists.
 - [The fleet](../lore/fleet.md) — the 25 hulls, their crews and their burden
 - [The reckonin' o' what matters](double-materiality.md) — where climate was scored material
 - [The Salacia mappin'](salacia-mapping.md) — entities, locations and the paper-to-platform hand-off
+- [POL-E1 The Vow of the Old Ways](../policies/e1-climate.md) — the written climate policy, its actions, milestones and 2050 marks
 - [Canon](../canon/facts.yaml) — the numbers an' names, includin' the `e1` totals

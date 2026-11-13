@@ -1,7 +1,7 @@
 ---
 title: S2, S3 an' S4 — the hands that fit us out, the folk o' the ports, an' them as take delivery
 status: draft
-last-verified: 2026-09-18
+last-verified: 2026-11-13
 canon-refs:
   - company.legal_name
   - reporting.reported_year_label
@@ -124,6 +124,8 @@ in restitution an' 2 more in release on the spot. Mitigation, not consent.
 
 ### S2-1 Standin' orders (policies)
 
+The standin' orders below are written out in full as [POL-S2 The Fitting-Out Order](../policies/s2-value-chain-workers.md), adopted by the Kermis Council of October 2026, with their scope, accountability an' the actions planned to FY2030.
+
 1. **The Sainte-Marie clause**, Article 21: the Gilde deals in no person, holds none to
    labour an' carries none against their will. **No forced labour** — pressin' be abolished
    an' reported as the past wrong it be — an' **no child labour**: every hand aboard an' on a
@@ -173,6 +175,8 @@ chain o' 1,630 people be fewer than such a chain has.
 
 ### S2-5 The marks we steer for
 
+The year-by-year milestones from FY2026 to FY2030 an' the 2050 marks for these targets are set in [POL-S2 The Fitting-Out Order](../policies/s2-value-chain-workers.md) an' held in [the target register](../data/targets.csv).
+
 | the mark | by when | FY2025 |
 | --- | --- | --- |
 | Every supplier visited once in two years | FY2027 | 29 o' 63 |
@@ -218,6 +222,8 @@ Sainte-Marie water intake be left standin' under the lease, for it be the forest
 the water. The Ambon premium be paid to growers, not agents.
 
 ### S3-1 Standin' orders
+
+The standin' orders below are written out in full as [POL-S3 The Good Neighbour Order](../policies/s3-port-communities.md), adopted by the Kermis Council of October 2026, with their scope, accountability an' the actions planned to FY2030.
 
 1. **Hire from the port first**, an' teach the trade: the Sainte-Marie ropewalk, the Ambon
    sail loft, the Vlissingen yard apprenticeship.
@@ -278,6 +284,8 @@ part, the smoke bein' shared with a kiln not ours.
 
 ### S3-5 The marks we steer for
 
+The year-by-year milestones from FY2026 to FY2030 an' the 2050 marks for these targets are set in [POL-S3 The Good Neighbour Order](../policies/s3-port-communities.md) an' held in [the target register](../data/targets.csv).
+
 | the mark | by when | FY2025 |
 | --- | --- | --- |
 | Tar-smoke claims at Vlissingen down to 3 | FY2028 | 9 |
@@ -305,6 +313,8 @@ an' none depends on us for water, food or shelter. Information an' safe keepin' 
 an' they be reported below.
 
 ### S4-1 Standin' orders
+
+The standin' orders below are written out in full as [POL-S4 The Honest Manifest Order](../policies/s4-consignees-clients.md), adopted by the Kermis Council of October 2026, with their scope, accountability an' the actions planned to FY2030.
 
 1. **The manifest be true or the cask does not sail.** Every cask carries the chamber's device
    in wax an' a tally number; the manifest names the island, the grower's mark an' the weight;
@@ -358,6 +368,8 @@ with the manifest on every cargo landed.
 
 ### S4-5 The marks we steer for
 
+The year-by-year milestones from FY2026 to FY2030 an' the 2050 marks for these targets are set in [POL-S4 The Honest Manifest Order](../policies/s4-consignees-clients.md) an' held in [the target register](../data/targets.csv). The written order sets its first milestones from FY2027, an' its marks supersede the dates in the table below where they differ.
+
 | the mark | by when | FY2025 |
 | --- | --- | --- |
 | No upheld complaint o' provenance, substitution or false mark | every year | 0 upheld |
@@ -386,6 +398,9 @@ an' by the tide.
 
 ## Related
 
+- [POL-S2 The Fitting-Out Order](../policies/s2-value-chain-workers.md) — the written policy, its actions, milestones an' 2050 marks
+- [POL-S3 The Good Neighbour Order](../policies/s3-port-communities.md) — the written policy, its actions, milestones an' 2050 marks
+- [POL-S4 The Honest Manifest Order](../policies/s4-consignees-clients.md) — the written policy, its actions, milestones an' 2050 marks
 - [Operations](../lore/operations.md) — the Division, the cargo, the shares
 - [The five chambers](../lore/bases.md) — the ports
 - [Articles of agreement](../lore/articles-of-agreement.md) — the parley an' the Sainte-Marie clause

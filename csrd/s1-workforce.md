@@ -1,7 +1,7 @@
 ---
 title: S1 Own Workforce — our hands
 status: draft
-last-verified: 2026-09-18
+last-verified: 2026-11-13
 canon-refs:
   - company.legal_name
   - reporting.reported_year_label
@@ -66,6 +66,8 @@ and checked at the Kermis muster against the muster roll; the youngest hand on t
 FY2025 was 18. The historical powder-boy rating does not exist here.
 
 ## S1-1 Policies
+
+The standin' orders on labour relations an' the parley are also written out as [POL-S1 The Articles and the Parley](../policies/s1-labour-relations.md), adopted by the Kermis Council of October 2026.
 
 The Gilde has one standing order (policy) for its workforce and it is the whole compact:
 [the Articles of Agreement](../lore/articles-of-agreement.md), signed or affirmed by every
@@ -151,6 +153,8 @@ Sailing Master taught backstaff, lead and log at both. Training hours per hand r
 a prize.
 
 ## S1-5 Targets
+
+The labour-relations marks (the parley closed in time, the Kermis vote, the articles read at signin', no retaliation, an outside observer at every chamber's parley) are set in [POL-S1 The Articles and the Parley](../policies/s1-labour-relations.md); the marks below stay here.
 
 | Metric | Unit | FY2024 | FY2025 | 2030 mark |
 | --- | --- | --- | --- | --- |
@@ -243,6 +247,8 @@ out of sight of the articles. The chamber posts the day rate, the Harbourmaster 
 count, and day labour works under the same standing orders on life and limb as a hand.
 
 ## S1-8 Collective bargainin' coverage an' social dialogue
+
+How the articles are kept as the collective instrument, an' the step toward an outside representative, are written out in [POL-S1 The Articles and the Parley](../policies/s1-labour-relations.md).
 
 | Metric | FY2025 | FY2024 |
 | --- | --- | --- |
@@ -447,6 +453,7 @@ the addition, and bad news goes up first.
 
 ## Related
 
+- [POL-S1 The Articles and the Parley](../policies/s1-labour-relations.md) — the written policy, its actions, milestones an' 2050 marks
 - [The workforce register](../data/workforce.csv) an' [its schema](../data/workforce.schema.md)
 - [The articles of agreement](../lore/articles-of-agreement.md) — the standing order behind the policies
 - [Who holds the helm](../lore/governance.md) — the vote, the parley, the two tiers

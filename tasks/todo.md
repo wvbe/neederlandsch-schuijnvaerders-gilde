@@ -54,7 +54,46 @@ anything from Task 2 onward.
 - [ ] Dry-run pass rate ≥ 9/10 recorded
 - [ ] Ready for the first Salacia reporting session on behalf of PSI
 
+## Phase 5 — Policies, targets, actions and metrics (planned 2026-11-13)
+Milestones FY2026–FY2030 on the Kermis year, plus a 2050 mark; base year FY2024.
+
+### Phase 5a — Framework and pattern
+- [x] Task 23: Policy framework: canon `policies:` block, Scope 3 intensity keys, `data/targets.csv` + schema, checker dir, `policies/index.md` (M) — deps: none
+- [x] Task 24: E1 climate policy, the pattern-setter (M) — deps: T23
+
+### Checkpoint E — Pattern approved
+- [x] Checker passes
+- [x] Wybe approves the template and target ambition (2026-11-13: all numbers pre-approved, no approval gate)
+
+### Phase 5b — Environment
+- [x] Task 25: E2 pollution policy (S) — deps: Checkpoint E — the 2050 tar-boiled mark must be 10.0 t (canon `e1.scope1_budget_2050_tco2e.tar_and_pitch` = 32.0 at 3.2)
+- [x] Task 26: E3 water and marine resources policy (S) — deps: Checkpoint E
+- [x] Task 27: E4 biodiversity policy (S) — deps: Checkpoint E
+- [x] Task 28: E5 resource use and circularity policy (S) — deps: Checkpoint E
+- [x] Task 29: Integrate the environment batch into canon, targets.csv and the topic file (M) — deps: T25–T28 and Wybe's approval of the proposals
+
+### Checkpoint F — Environment complete
+- [x] Checker passes; five environment policies live and linked
+
+### Phase 5c — Relations
+- [x] Task 30: S1 labour relations policy (S) — deps: Checkpoint E
+- [x] Task 31: S2 value-chain workers policy (S) — deps: Checkpoint E
+- [x] Task 32: S3 port communities policy (S) — deps: Checkpoint E
+- [x] Task 33: S4 consignees and clients policy (S) — deps: Checkpoint E
+- [x] Task 34: G1 supplier relations and payment policy; reconcile 96 vs 63 suppliers (S) — deps: Checkpoint E
+- [x] Task 35: G1 political engagement policy (S) — deps: Checkpoint E
+- [x] Task 36: Integrate the relations batch (M) — deps: T30–T35 and Wybe's approval of the proposals
+
+### Phase 5d — Wiring
+- [x] Task 37: Salacia mapping, playbook route, DMA policy coverage (S) — deps: T29, T36
+
+### Checkpoint G — Phase 5 complete
+- [x] Checker green
+- [x] 11 policies with actions, FY2026–FY2030 trajectory, 2050 mark and metrics
+- [ ] Wybe signs off as Quartermaster-General
+
 ## Parallel lanes
 - After T1: T2 ‖ T3
 - After T7: T8 ‖ T9 ‖ T10
 - After T13: T14 ‖ T15 ‖ T16 ‖ T17 ‖ T18
+- Phase 5: T23 → T24 → Checkpoint E; then T25‖T26‖T27‖T28 → T29 and T30‖T31‖T32‖T33‖T34‖T35 → T36; then T37

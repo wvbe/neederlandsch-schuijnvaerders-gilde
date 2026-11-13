@@ -745,3 +745,349 @@ piracy and Dutch maritime trade. Full grounding, rejected alternatives and sourc
 | Headcount and turnover | 25 ships crewing 1,944 (4 retourschepen, 6 jachten, 8 fluyts, 5 interdiction sloops, 2 galjoots) plus about 350 shore staff, about 2,300 total; turnover about EUR 480M; Task 1 verifies the current Omnibus thresholds and records the date |
 | Bases and entity-name languages | Vlissingen (Dutch), Baltimore in West Cork (English and Irish), Port Royal (English), Île Sainte-Marie (Malagasy and French), Ambon (Indonesian, PT form); each with an English gloss |
 | Signatories | Captain-General for the Council of Captains and the presiding Lord of the Heeren Vijf, countersigned by the Quartermaster-General, figures attested by the Advocaat-Boekhouder |
+
+---
+
+# Phase 5 plan: policies, targets, actions and metrics
+
+Planned 2026-11-13. Adds a set of standalone environment and relations policies, each with
+the actions, targets and metrics ESRS asks for (MDR-P, MDR-A, MDR-T, MDR-M), to the knowledge
+base built in Tasks 1–22. This is still a content repository. The only code change is one
+line in the checker.
+
+## Overview
+
+Today the Gilde's standing orders, actions and targets sit inside the topic files (E1-2,
+E2-1 … S4-5, G1-2, G1-5). They cover FY2025 and a single 2030 mark. Only E1 has a 2050 mark.
+Phase 5 gives each material topic its own policy document under `policies/`. Each document
+names its owner, scope, commitments, the actions planned for FY2026–FY2030, a target table
+with annual milestones from FY2026 to FY2030 plus a 2050 mark, and the metric definitions
+behind each target. An agent filling an E2-3 or S3-5 datapoint can then lift a whole MDR
+answer from one file.
+
+## Scope (decided with Wybe, 2026-11-13)
+
+| Group | Policy file | ESRS | Builds on |
+| --- | --- | --- | --- |
+| Environment | `policies/e1-climate.md` | E1-2, E1-3, E1-4 | Vow of the Old Ways; galley-fuel and tar orders |
+| Environment | `policies/e2-pollution.md` | E2-1, E2-2, E2-3 | Tar, lead-shot, bilge-and-ballast orders |
+| Environment | `policies/e3-water-marine.md` | E3-1, E3-2, E3-3 | Water ration, high-stress chambers, no marine extraction |
+| Environment | `policies/e4-biodiversity.md` | E4-2, E4-3, E4-4 | No reef careening, rats, oak planting, named timber sources |
+| Environment | `policies/e5-resources.md` | E5-1, E5-2, E5-3 | Reuse of hull timber, rope and casks, landfill |
+| Relations | `policies/s1-labour-relations.md` | S1-1, S1-2, S1-3, S1-4, S1-5, S1-8 | The articles, ships' councils, the parley |
+| Relations | `policies/s2-value-chain-workers.md` | S2-1 … S2-5 | Sainte-Marie clause, chandler's undertaking, seized crews |
+| Relations | `policies/s3-port-communities.md` | S3-1 … S3-5 | Port hearings, FPIC, port claims |
+| Relations | `policies/s4-consignees-clients.md` | S4-1 … S4-5 | Honest manifest, provenance, auction origin statements |
+| Relations | `policies/g1-supplier-relations.md` | G1-2, G1-6 | 30-day terms, shares of the voyage, chandlers' book |
+| Relations | `policies/g1-political-engagement.md` | G1-5 | No political money, open petitions only |
+
+Out of scope: S1 health and safety, pay and diversity (they stay in `csrd/s1-workforce.md`);
+G1 anti-corruption and the commission due diligence; entering E1 targets into Salacia's
+reduction plan (`backend-reduction-plan`). That last one is listed under open questions.
+
+## Architecture decisions
+
+- **Kermis years for the milestones.** Annual milestones are FY2026, FY2027, FY2028,
+  FY2029 and FY2030 on canon's October–September year. The base year stays FY2024
+  (`102023-092024`) and the 2050 mark is FY2050. The Salacia tenant's 2026 year is calendar
+  `012026-122026`. That mismatch is not resolved here; it is listed under open questions.
+- **FY2026 is a closed year.** It ended on 2026-09-30. Its milestone counts as set at the
+  Kermis of 2025, before the year began, as the existing 2030 marks were. FY2026 actuals are
+  `[UNCHARTED]` unless canon gains them. No policy invents an outcome for FY2026.
+- **The existing 2030 marks do not move.** Each FY2030 milestone is the canon
+  `target_2030_*` value that already exists. A policy that wants a different 2030 mark
+  proposes the change in its canon proposal with a reason, and the Quartermaster-General
+  decides.
+- **Where numbers live.** New 2050 marks and any new headline metric go into canon in the
+  topic block that already holds their 2030 sibling (`e1`, `environment`, `dma`, `g1`,
+  `social_value_chain`). The year-by-year milestones go in a new register,
+  `data/targets.csv`, one row per target, with its own `data/targets.schema.md`. Canon also
+  gains a `policies:` block listing each policy: id, title, owning office, accountable
+  office, adopted date, review cycle and file.
+- **Canon first, through proposals.** Each drafting task writes its new numbers to
+  `tasks/canon-proposals/policies-<id>.yaml` and its rows to
+  `tasks/canon-proposals/policies-<id>.targets.csv`. One integration task per batch merges
+  them into canon, `data/targets.csv` and the topic files. This lets the drafting tasks run
+  in parallel even though E2–E5 share one canon block and one topic file, and so do S2–S4.
+- **Gross targets, the Vow holds.** No target is met by offsets, credits or buying anything
+  in. No action breaks `operations.technology_rule`. The 2050 marks must be reachable with
+  17th-century means, which is why E1 does not claim net zero.
+- **Six chambers from FY2026.** Vava'u opened in October 2025, so the scope of every policy
+  from FY2026 covers 6 chambers (`company.chamber_count`). Vava'u has no baseline. Its
+  per-chamber targets start from a baseline to be set in FY2026, and its unknown numbers
+  stay `[UNCHARTED]`, as decision 9 requires.
+- **One template.** Every policy file has the same sections, in the Formal register:
+  frontmatter; purpose; scope (activities, value chain, chambers, hulls, exclusions);
+  accountability (highest office answerable for it, and who carries it out day to day);
+  commitments (the standing orders, quoted); third-party standards and stakeholders
+  consulted; actions FY2026–FY2030 (what, where, when, resources, expected result);
+  targets (a table of metric, unit, absolute or relative, base FY2024, FY2025, FY2026–FY2030,
+  2050, scope); metrics (a definition, method, data source and canon key for each);
+  monitoring and review (renewed at each Kermis); related files. The template lives in
+  `policies/index.md`, and the E1 policy is the worked example of it.
+
+## Dependency graph
+
+```
+T23 framework: canon policies block, data/targets.csv + schema, checker dir, policies/index.md
+  │
+  └── T24 E1 climate policy (pattern-setter)
+        │
+        ├── Checkpoint E: Wybe approves the template and target ambition
+        │
+        ├── T25 E2 ‖ T26 E3 ‖ T27 E4 ‖ T28 E5 ──► T29 integrate the environment batch
+        │
+        └── T30 S1 ‖ T31 S2 ‖ T32 S3 ‖ T33 S4 ‖ T34 G1-2 ‖ T35 G1-5 ──► T36 integrate the relations batch
+                                                                          │
+                                                   T29 + T36 ──► T37 Salacia mapping, playbook, DMA coverage
+```
+
+## Task list
+
+### Phase 5a — Framework and pattern
+
+## Task 23: Policy framework
+
+**Description:** Lay the foundations every policy file stands on. Add the `policies:` block
+to canon. Add the missing Scope 3 intensity marks to canon: `csrd/e1-climate.md` states 60
+for 2030 and 45 for 2050, and canon has neither. Create `data/targets.csv` (header only)
+with `data/targets.schema.md`. Add `policies` to `PROSE_DIRS` in `scripts/check_canon.py`
+so the new folder gets checked. Write `policies/index.md`: the policy register, the
+template, and the rules for setting targets (base year, Kermis milestones, 2050, gross).
+
+**Acceptance criteria:**
+- [ ] `canon/facts.yaml` has a `policies:` block with an entry for all 11 policies (files may not exist yet) and `e1.target_2030_scope3_intensity` = 60 and `e1.target_2050_scope3_intensity` = 45
+- [ ] The `data/targets.csv` header and `data/targets.schema.md` agree. Columns include `policy_id`, `target_id`, `metric`, `unit`, `kind` (absolute or relative), `scope`, `base_fy2024`, `fy2025`, `fy2026` … `fy2030`, `fy2050`, `canon_key_2030`, `canon_key_2050`
+- [ ] `policies/index.md` holds the register table, the section template and the target-setting rules, with frontmatter
+
+**Verification:**
+- [ ] `uv run scripts/check_canon.py` passes and lists files under `policies/`
+- [ ] Manual check: every row of the register points to a planned file name in the scope table above
+
+**Dependencies:** None (Tasks 1–21 done)
+
+**Files likely touched:** `canon/facts.yaml`, `data/targets.csv`, `data/targets.schema.md`,
+`scripts/check_canon.py`, `policies/index.md`
+
+**Estimated scope:** M
+
+## Task 24: E1 climate policy (pattern-setter)
+
+**Description:** Write `policies/e1-climate.md` to the template, from the Vow of the Old
+Ways and the two standing orders. Planned actions FY2026–FY2030: kiln hoods at Vava'u,
+charcoal in every galley that can carry it, pressed lamp oil across all chambers, and a
+sail-plan log. Targets: fossil Scope 1, Scope 3 intensity and the renewable energy share,
+each with FY2026–FY2030 milestones and a 2050 mark. Merge this task's canon additions and
+targets rows directly, without a proposal file, so the integration pattern is proven once.
+Point the E1-2, E1-3 and E1-4 sections of `csrd/e1-climate.md` to the policy.
+
+**Acceptance criteria:**
+- [ ] Every template section is present. The FY2030 and 2050 values equal canon (`e1.target_2030_scope1_tco2e`, `e1.target_2050_scope1_tco2e` and the Task 23 intensity keys)
+- [ ] The Scope 1 milestones fall every year from FY2025 (168.0) to FY2030 (110). Each action states the chamber or hull class, the year and the resource
+- [ ] `data/targets.csv` has the E1 rows, and `csrd/e1-climate.md` links to the policy without repeating its tables
+
+**Verification:**
+- [ ] `uv run scripts/check_canon.py` passes
+- [ ] Manual check: the Formal register follows `brand/voice-and-language.md`, and numbers, units and ESRS codes are untranslated
+
+**Dependencies:** T23
+
+**Files likely touched:** `policies/e1-climate.md`, `canon/facts.yaml`, `data/targets.csv`,
+`csrd/e1-climate.md`
+
+**Estimated scope:** M
+
+### Checkpoint E — Pattern approved
+- [ ] Checker passes
+- [ ] Wybe reads `policies/e1-climate.md`, approves the template and target ambition, or asks for changes before the fan-out
+
+### Phase 5b — Environment policies (T25–T28 in parallel)
+
+Each of T25–T28 follows the same shape, so it is written out once here.
+
+**Description (shared):** Write the policy file to the template, built on the standing
+orders already in the matching section of `csrd/e2-e5-environment.md`. Propose
+FY2026–FY2029 milestones that run toward the existing 2030 mark, a 2050 mark for every
+target, and any new metric the policy needs, with a FY2024 and FY2025 value consistent with
+the activity data. Write the numbers to the task's canon-proposal YAML and the rows to its
+targets fragment. Do not edit canon, `data/targets.csv` or the topic file; that is T29.
+
+**Acceptance criteria (shared):**
+- [ ] All template sections present. Each target has a base, FY2025, five milestones and a 2050 mark, and each FY2030 equals the existing canon 2030 key
+- [ ] Every number in the policy is either already in canon or in the task's proposal YAML, with a one-line reason
+- [ ] No action or 2050 mark breaks `operations.technology_rule`. Vava'u appears in scope, with uncharted values marked `[UNCHARTED]`
+
+**Verification (shared):**
+- [ ] `uv run scripts/check_canon.py` passes. Canon-ref warnings for keys still in proposal are expected and listed in the task's hand-off note
+- [ ] Manual check: each milestone series moves monotonically from FY2025 toward FY2030
+
+**Dependencies (shared):** Checkpoint E
+
+**Estimated scope (each):** S, 3 files
+
+## Task 25: E2 pollution policy
+Targets: tar boiled, kiln volatile losses, lead shot recovered, scrapings landed, discharges
+within a league, white-lead paint. The 2050 marks to propose include whether lead shot is
+fired over water at all.
+Files: `policies/e2-pollution.md`, `tasks/canon-proposals/policies-e2.yaml`, `tasks/canon-proposals/policies-e2.targets.csv`
+
+## Task 26: E3 water and marine resources policy
+Targets: water drawn at the high-stress chambers, rainwater share of island-yard water, and
+`marine_resources_extracted: none` kept as a standing commitment.
+Files: `policies/e3-water-marine.md`, `tasks/canon-proposals/policies-e3.yaml`, `tasks/canon-proposals/policies-e3.targets.csv`
+
+## Task 27: E4 biodiversity policy
+Targets: no reef careening, rat incidents, oak planted per year, named replanted timber
+source. Takes in the E4-1 transition plan and the hard surveys, with a signed hard survey
+for Vava'u in FY2026.
+Files: `policies/e4-biodiversity.md`, `tasks/canon-proposals/policies-e4.yaml`, `tasks/canon-proposals/policies-e4.targets.csv`
+
+## Task 28: E5 resource use and circularity policy
+Targets: reused share of inflow (with and without provisions), broken hull timber reused,
+landfill share.
+Files: `policies/e5-resources.md`, `tasks/canon-proposals/policies-e5.yaml`, `tasks/canon-proposals/policies-e5.targets.csv`
+
+## Task 29: Integrate the environment batch
+
+**Description:** Bring T25–T28 in once Wybe, as Quartermaster-General, has approved the
+proposals. Merge the four YAMLs into the `environment` canon block, append the fragments to
+`data/targets.csv`, add `canon-refs` to the policy frontmatter, and point E2-1/E2-3,
+E3-1/E3-3, E4-2/E4-4 and E5-1/E5-3 in `csrd/e2-e5-environment.md` to the policies. Then
+delete the merged proposal files, or mark them merged as earlier tasks did.
+
+**Acceptance criteria:**
+- [ ] No proposal key is left unmerged without a written reason. `data/targets.csv` holds the E1–E5 rows
+- [ ] Each FY2030 and FY2050 cell in `data/targets.csv` equals its canon key
+
+**Verification:**
+- [ ] `uv run scripts/check_canon.py` passes with no canon-ref warnings
+- [ ] Manual check: a short script or a read-through compares the CSV 2030/2050 columns with canon
+
+**Dependencies:** T25–T28
+
+**Files likely touched:** `canon/facts.yaml`, `data/targets.csv`, `csrd/e2-e5-environment.md`,
+the four policy files
+
+**Estimated scope:** M
+
+### Checkpoint F — Environment complete
+- [ ] Checker passes; five environment policies are live and linked
+
+### Phase 5c — Relations policies (T30–T35 in parallel)
+
+Same shared description, acceptance criteria and verification as Phase 5b. Relations
+targets often have no 2030 key yet; where none exists, the task proposes one. Guardrails
+from `AGENTS.md` section 5 apply in full. Dependencies: Checkpoint E (not F; the two
+batches are independent).
+
+## Task 30: S1 labour relations policy
+Covers the articles as the collective instrument, ships' councils, election and removal of
+officers, the parley and appeal times, and the stated lack of an external representative
+body. Targets to propose: parley cases closed within the appeal window, hands at the Kermis
+vote, and a step toward an external representative body by 2050 (or a reasoned refusal).
+The existing S1-5 marks (hurts, women, floor payment) are referenced, not restated.
+Files: `policies/s1-labour-relations.md`, `tasks/canon-proposals/policies-s1.yaml`, `tasks/canon-proposals/policies-s1.targets.csv`
+
+## Task 31: S2 value-chain workers policy
+Builds on the existing 2027 marks: supplier visits, two-year coverage, the rope-walk code,
+and seized-crew complaints closed within 30 days. Extends them to FY2030 and 2050, and keeps
+"no forced or child labour finding" as a yearly zero.
+Files: `policies/s2-value-chain-workers.md`, `tasks/canon-proposals/policies-s2.yaml`, `tasks/canon-proposals/policies-s2.targets.csv`
+
+## Task 32: S3 port communities policy
+Port hearings per chamber (now 6), FPIC, port claims and closure days, and Vlissingen tar
+smoke claims (the 2028 mark).
+Files: `policies/s3-port-communities.md`, `tasks/canon-proposals/policies-s3.yaml`, `tasks/canon-proposals/policies-s3.targets.csv`
+
+## Task 33: S4 consignees and clients policy
+Honest manifest, provenance papers travelling with the parcel, auction origin statements,
+the tortoiseshell standing order, and complaint closure. Targets are newly proposed, since
+S4 has none in canon.
+Files: `policies/s4-consignees-clients.md`, `tasks/canon-proposals/policies-s4.yaml`, `tasks/canon-proposals/policies-s4.targets.csv`
+
+## Task 34: G1 supplier relations and payment policy
+30-day terms, shares of the voyage, invoices within terms, average days to pay, and conflict
+of interest at the Harbourmaster's desk. **Must reconcile** `g1.supplier_count_fy2025` (96)
+with `social_value_chain.suppliers_on_register_fy2025` (63). The likely reading is that the
+chandlers' book is a subset of all suppliers; state it, or propose a canon fix.
+Files: `policies/g1-supplier-relations.md`, `tasks/canon-proposals/policies-g1-2.yaml`, `tasks/canon-proposals/policies-g1-2.targets.csv`
+
+## Task 35: G1 political engagement policy
+No political money, petitions only, in the open and on the public record, and an entry
+in a transparency register before any lobbying begins. Targets: EUR 0 every year and
+petitions published within a set number of days. 2050 restates the commitment.
+Files: `policies/g1-political-engagement.md`, `tasks/canon-proposals/policies-g1-5.yaml`, `tasks/canon-proposals/policies-g1-5.targets.csv`
+
+## Task 36: Integrate the relations batch
+
+**Description:** The same procedure as T29, for T30–T35. Merge into the `dma`,
+`social_value_chain` and `g1` blocks, append to `data/targets.csv`, and link from
+`csrd/s1-workforce.md`, `csrd/s2-s4-value-chain-communities.md` and `csrd/g1-conduct.md`.
+
+**Acceptance criteria / verification:** As T29, for the relations rows.
+
+**Dependencies:** T30–T35
+
+**Estimated scope:** M
+
+### Phase 5d — Wiring
+
+## Task 37: Salacia mapping, playbook and DMA coverage
+
+**Description:** Make the policies findable and complete. Add the policy files to
+`csrd/salacia-mapping.md` against each datapoint they answer. Add a "policy, action or
+target datapoint" route to `agents/reporting-playbook.md`. Check every material IRO in
+`data/iros.csv` against a policy. ESRS requires the report to say so when a material topic
+has no policy, so either name the policy or record why there is none.
+
+**Acceptance criteria:**
+- [ ] Each of the 11 policies appears in the mapping with its datapoint codes
+- [ ] The playbook names `policies/` and `data/targets.csv` as the source for MDR-P/A/T/M answers
+- [ ] Every material IRO maps to a policy or has a stated reason in its topic file
+
+**Verification:**
+- [ ] `uv run scripts/check_canon.py` passes (the one run for the phase, per the lean-validation preference)
+
+**Dependencies:** T29, T36
+
+**Files likely touched:** `csrd/salacia-mapping.md`, `agents/reporting-playbook.md`,
+`policies/index.md`, possibly a topic file
+
+**Estimated scope:** S
+
+### Checkpoint G — Phase 5 complete
+- [ ] Checker green
+- [ ] Eleven policies, each with actions, a FY2026–FY2030 trajectory, a 2050 mark and defined metrics
+- [ ] Wybe signs off as Quartermaster-General
+
+## Parallelization (Phase 5)
+
+- Sequential: T23 → T24 → Checkpoint E.
+- Then two independent lanes: T25–T28 in parallel, then T29; and T30–T35 in parallel, then T36.
+  Up to ten drafting agents can run at once. Each writes only its own policy file and its
+  own proposal files, so they never collide. Agents run on Opus, per Wybe's preference.
+- T37 last.
+
+## Risks and mitigations (Phase 5)
+
+| Risk | Impact | Mitigation |
+| --- | --- | --- |
+| Parallel drafts collide in shared canon blocks and topic files | High | Drafting tasks write proposal files only; one integration task per batch |
+| Targets drift from the existing 2030 marks | Med | FY2030 must equal the existing canon key; changes only by proposal with a reason |
+| 2050 marks that need modern technology | Med | Each 2050 mark checked against `operations.technology_rule` in acceptance criteria |
+| Invented FY2026 actuals | Med | FY2026 actuals are `[UNCHARTED]`; only the milestone is stated |
+| Vava'u numbers invented to fill a per-chamber target | Med | Baseline "to be set in FY2026"; unknowns stay `[UNCHARTED]` (decision 9) |
+| Supplier count mismatch (96 vs 63) leaks into two policies | Low | T34 reconciles it; T31 cites T34's resolution at integration |
+| The policies repeat the topic files and the two drift apart | Med | Topic files keep FY2025 facts and link to the policy for the forward-looking part; tables are not duplicated |
+
+## Open questions (Phase 5)
+
+- **Calendar mismatch.** Canon's Kermis year against the tenant's calendar
+  `012026-122026`. These milestones use Kermis years. If the tenant stays on calendar years,
+  a separate decision is needed on how an FY2027 milestone is reported in calendar 2027.
+- **Salacia reduction plan.** Should the E1 targets and the FY2026–FY2030 pathway also be
+  entered into the tenant's reduction plan (targets, pathways, projects), or stay in the
+  narrative datapoints only? This is a later, separate task.
+- **2050 ambition for relations topics.** Many relations 2050 marks will restate a standing
+  commitment, such as "zero findings" or "EUR 0". Is that acceptable, or should each have a
+  measurable stretch mark?

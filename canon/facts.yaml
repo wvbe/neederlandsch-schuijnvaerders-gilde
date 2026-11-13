@@ -181,6 +181,7 @@ chambers_opened_after_reported_year:          # outside 102024-092025; no report
     established_year: 2025
     established_by: "vote of the Kermis Council, October 2025"
     function: "Pacific islands run: harbour, victualling and fresh water at the far end of PAC-1"
+    acting_harbourmaster_chamber: ambon          # the Harbourmaster of Ambon answers for Vava'u until De Heeren Vijf appoint one; PAC-1 runs from Ambon
     # shore headcount uncharted: first counted in the first reporting year that includes the chamber
 
 governance:
@@ -341,6 +342,32 @@ e1:                                           # Task 14; computed from data/e1-a
   target_2050_scope1_tco2e: 45
   cargo_tonne_nmi_fy2025: 78000000   # denominator of the Scope 3 intensity mark in csrd/e1-climate.md E1-4; derived from the fleet register
   cargo_tonne_nmi_fy2024: 74000000
+  scope3_intensity_fy2025: 73.5                # tCO2e per million tonne-nmi carried; stated in csrd/e1-climate.md E1-4
+  scope3_intensity_fy2024: 73.1
+  target_2030_scope3_intensity: 60             # tCO2e per million tonne-nmi carried, gross
+  target_2050_scope3_intensity: 45
+  target_2030_renewable_energy_share_percent: 98.6   # first set by the written Vow (POL-E1), Kermis Council October 2026
+  target_2050_renewable_energy_share_percent: 99.4
+  fossil_fuel_and_bought_energy_mwh_mark: 0       # every year, 2050 included; the Vow forbids the gear
+  scope1_by_source_tco2e_fy2025:                  # as csrd/e1-climate.md E1-6 rounds them; they sum to 168.1, the unrounded rows to 168.0
+    tar_and_pitch: 94.1
+    livestock: 32.0
+    lamp_oil: 27.6
+    black_powder: 8.0
+    tallow: 6.4
+  scope1_budget_2030_tco2e:                       # the Raad's costing of the 110 mark; sums to target_2030_scope1_tco2e
+    tar_and_pitch: 76.8                           # 24.0 t boiled at 3.2 = environment.target_2030_tar_boiled_t
+    livestock: 16.0                               # 320 head on the hoof, half of FY2025
+    lamp_oil: 10.0
+    black_powder: 5.0
+    tallow: 2.2
+  scope1_budget_2050_tco2e:                       # sums to target_2050_scope1_tco2e
+    tar_and_pitch: 32.0                           # 10.0 t boiled at 3.2; binds the E2 2050 tar mark (POL-E2)
+    livestock: 8.0                                # 160 head
+    lamp_oil: 3.0
+    black_powder: 2.0
+    tallow: 0.0                                   # beeswax in every lantern an' cabin
+  livestock_head_fy2025: 640                      # 32.0 tCO2e at 0.05 per head
 
 dma:                                          # Task 13; the reckonin' o' what matters, scored in data/iros.csv
   iro_count: 30
@@ -514,6 +541,28 @@ s1:
   target_2030_women_share_percent: 45.0
   target_2030_floor_payment_coverage_percent: 100
 
+  # --- POL-S1 (policies/), merged 2026-11-13 ---
+  parley_closure_window_days: 28                   # 14 days for the chamber's hearing plus the 14 days within which an appeal goes to the Quartermaster-General (S2-3)
+  parley_closed_within_window_fy2025: 27           # of the 31 called in FY2025; 2 were still open at year end and 2 closed after the window
+  parley_closed_within_window_percent_fy2024: 85.2 # 23 of the 27 called in FY2024; proposed baseline, the parley book was not tallied by window before
+  parley_closed_within_window_percent_fy2025: 87.1 # 27 / 31
+  target_2030_parley_closed_within_window_percent: 95    # proposed; every hand's hearing in time, with room for a hard case
+  target_2050_parley_closed_within_window_percent: 100
+  kermis_parley_turnout_percent_fy2024: 55.0       # enrolled hands voting at the Kermis parley, in person or by written voice sent by galjoot; proposed baseline
+  kermis_parley_turnout_percent_fy2025: 58.0       # proposed baseline; 5 chambers counted, Vava'u first counted FY2026
+  target_2030_kermis_parley_turnout_percent: 70.0  # proposed; a vote that most hands, not some, have used
+  target_2050_kermis_parley_turnout_percent: 85.0
+  articles_read_at_signing_percent_fy2025: 100     # new hands hearing the articles read aloud before the first watch (Article 1); stated in the order, counted from the muster roll
+  target_2030_articles_read_at_signing_percent: 100   # held every year
+  target_2050_articles_read_at_signing_percent: 100
+  retaliation_findings_fy2025: 0                   # findings that a hand was turned out, docked or shifted for calling the parley; matches g1.whistleblower_retaliation_complaints_fy2025
+  retaliation_findings_fy2024: 0
+  target_2030_retaliation_findings: 0              # held every year
+  target_2050_retaliation_findings: 0
+  external_observer_chambers_fy2025: 0             # chambers whose Kermis parley is observed by a seafarers' representative from outside the Gilde
+  target_2030_external_observer_chambers: 6        # proposed; every chamber, Vava'u included
+  target_2050_external_observer_chambers: 6
+
 # G1 business conduct; stated in csrd/g1-conduct.md (merged from tasks/canon-proposals/g1.yaml)
 # Canon proposal from Task 18 (csrd/g1-conduct.md). Every number this file introduces,
 # exactly as written in the topic file. The Quartermaster-General (a human) decides what
@@ -599,6 +648,31 @@ g1:
       subject: "leave to careen in February and March, outside the grey seals' whelping"
     - lodged_with: "the Zeeland provincial estates"
       subject: "recognition of carriage under sail alone in the province's carriage accounting"
+
+  # --- POL-G1-2 (policies/), merged 2026-11-13 ---
+  suppliers_on_chandlers_book_fy2025: 63      # reading: the 63 of social_value_chain.suppliers_on_register_fy2025 are the labour-intensive suppliers whose hands are mustered, a subset of the 96 of supplier_count_fy2025
+  suppliers_on_chandlers_book_percent_fy2025: 65.6   # 63 of 96, rounded to one decimal; baseline of G1-2-T5
+  invoices_paid_late_percent_fy2025: 3.6      # 100 less 96.4; stated in csrd/g1-conduct.md G1-6 and in the policy
+  target_2030_invoices_paid_within_terms_percent: 99   # G1-2-T1
+  target_2030_average_days_to_pay: 21                  # G1-2-T2
+  target_2030_late_payment_proceedings: 0              # G1-2-T3, held every year
+  target_2030_late_payment_disputes: 1                 # G1-2-T4
+  target_2030_suppliers_on_chandlers_book_percent: 90  # G1-2-T5
+  target_2050_invoices_paid_within_terms_percent: 100  # every bill within terms
+  target_2050_average_days_to_pay: 20                  # kept below the 30-day term with a margin
+  target_2050_late_payment_proceedings: 0              # held
+  target_2050_late_payment_disputes: 0                 # no dispute over a late bill
+  target_2050_suppliers_on_chandlers_book_percent: 100 # every supplier on the one book, each signed
+  # --- POL-G1-5 (policies/), merged 2026-11-13 ---
+  target_2030_political_contributions_eur: 0          # held at EUR 0; first set by the written Open Petition Order
+  target_2050_political_contributions_eur: 0          # a standing commitment kept as a mark, read at every Kermis Council
+  petition_posting_days: 30                           # days from lodging within which a petition is posted at every chamber gate
+  target_2030_petitions_posted_percent: 100           # share posted at every chamber gate within the posting days
+  target_2050_petitions_posted_percent: 100           # held at 100
+  target_2030_lobbying_without_register_entry: 0      # acts of lobbying begun with no prior transparency-register entry
+  target_2050_lobbying_without_register_entry: 0      # held at 0
+  target_2030_petitions_read_against_orders_percent: 100   # share read against the Gilde's orders by the Quartermaster-General before lodging
+  target_2050_petitions_read_against_orders_percent: 100   # held at 100
 
 # S2 to S4 value chain, communities, end users; stated in csrd/s2-s4-value-chain-communities.md (merged from tasks/canon-proposals/s2-s4.yaml)
 # Canon proposals from Task 17, csrd/s2-s4-value-chain-communities.md.
@@ -714,6 +788,46 @@ social_value_chain:
   consumer_complaint_replacement_paid_eur_fy2025: 6200   # the tainted mace
   consumer_complaint_delivery_held_days_fy2025: 19
   consumer_complaints_substitution_or_false_mark_fy2025: 0
+
+  # --- POL-S2 (policies/), merged 2026-11-13 ---
+  supplier_coverage_two_years_percent_fy2025: 46.0   # 29 suppliers visited of 63 on the register; derived so the target table can state its FY2025 value
+  target_2030_supplier_visits: 48                    # extends the 45-visit mark of 2027; the register stays near 63, so growth is slow
+  target_2050_supplier_visits: 50                    # long mark; a visit a year to most suppliers on a register held near its present size
+  target_2030_supplier_coverage_two_years_percent: 100   # the 2027 mark of 100 is held, not exceeded
+  target_2050_supplier_coverage_two_years_percent: 100   # held every year to 2050
+  target_2030_ropewalk_code: true                    # the signed rope-walk and sawmill code stays a condition of the chandlers' book
+  target_2050_ropewalk_code: true                    # held to 2050
+  target_2030_seized_crew_complaint_days: 21         # tightens the 30-day mark of 2027 as the parley book matures
+  target_2050_seized_crew_complaint_days: 14         # long mark; equals the appeal window of the parley
+  target_2027_forced_or_under_age_findings: 0        # hold target, set in the topic file as "every year"; stated from FY2027 in the register
+  target_2030_forced_or_under_age_findings: 0        # hold: no finding of forced labour or a hand under age
+  target_2050_forced_or_under_age_findings: 0        # hold to 2050
+  target_2027_spice_premium_percent: 12              # floor for the Ambon premium over the going rate, first set by the written order
+  target_2030_spice_premium_percent: 12              # floor held; a living-income reckoning with the growers' season council may raise it
+  target_2050_spice_premium_percent: 12              # floor held to 2050
+  # --- POL-S3 (policies/), merged 2026-11-13 ---
+  target_2030_vlissingen_tar_smoke_claims: 2      # extends the FY2028 mark of 3 as the hooded kilns take effect (with POL-E2's tar mark)
+  target_2050_vlissingen_tar_smoke_claims: 1      # a long mark short of zero: smoke shared with a kiln not the Gilde's cannot be set to nothing
+  target_2030_port_hearings_per_chamber: 5        # one more than the FY2027 mark of 4, across all 6 chambers
+  target_2050_port_hearings_per_chamber: 6        # one a chamber every two months; the Vava'u count is not yet charted
+  target_2030_port_claim_closure_days: 45         # tightens the FY2027 mark of 60
+  target_2050_port_claim_closure_days: 30         # a month, as the seized-crew complaints already are
+  target_2030_fpic_consent_sought_percent: 100    # first set by the written order (POL-S3); consent before any new anchorage, watering place or lease
+  target_2050_fpic_consent_sought_percent: 100    # held every year
+  target_2030_fpic_refusals_honoured_percent: 100 # first set by the written order (POL-S3); a refusal ends the matter for the season
+  target_2050_fpic_refusals_honoured_percent: 100 # held every year
+  # --- POL-S4 (policies/), merged 2026-11-13 ---
+  complaint_close_days_mark: 30                                     # days from the parley to closure; the window behind S4-T1
+  target_2030_complaints_closed_within_window_percent: 100   # S4-T1, all complaints closed within the window
+  target_2050_complaints_closed_within_window_percent: 100   # S4-T1, held
+  target_2030_parcels_without_provenance_papers: 0                  # S4-T2, FY2025 baseline 1 parcel
+  target_2050_parcels_without_provenance_papers: 0                  # S4-T2, held at 0
+  target_2030_auction_origin_statement_read_in_full_percent: 100    # S4-T3, FY2025 baseline 6 of 6 auctions
+  target_2050_auction_origin_statement_read_in_full_percent: 100    # S4-T3, held
+  target_2030_substitution_or_false_mark_complaints_upheld: 0       # S4-T4, FY2025 baseline 0
+  target_2050_substitution_or_false_mark_complaints_upheld: 0       # S4-T4, held at 0
+  target_2030_weight_short_complaints_long_passage: 0               # S4-T5, FY2025 baseline 2
+  target_2050_weight_short_complaints_long_passage: 0               # S4-T5, held at 0
 
 # E2 to E5 environment; stated in csrd/e2-e5-environment.md (merged from tasks/canon-proposals/e2-e5.yaml)
 # Canon proposal from Task 15: every new number introduced by csrd/e2-e5-environment.md.
@@ -871,3 +985,126 @@ environment:
   target_2030_reused_share_excluding_provisions_percent: 25.0
   target_2030_broken_hull_timber_reused_percent: 90.0
   target_2030_waste_landfill_share_percent: 0.5
+
+  # --- POL-E2 (policies/), merged 2026-11-13 ---
+  target_2050_tar_boiled_t: 10.0                          # fixed: 32.0 tCO2e Scope 1 tar budget in e1.scope1_budget_2050_tco2e at 3.2 tCO2e/t
+  target_2030_tar_volatile_loss_factor_percent: 1.7       # 0.4 t mark over the 24.0 t mark for tar boiled; plain hood is 2.5
+  target_2050_tar_volatile_loss_factor_percent: 1.5       # condensing worms tuned by 2050
+  target_2050_tar_volatile_loss_t: 0.15                   # 10.0 t boiled at 1.5%
+  target_2050_lead_shot_recovered_percent: 98.0           # no shot fired over open water by 2050; sieve loss only
+  target_2050_scrapings_landed_percent: 100.0             # held once reached in 2030
+  target_2050_discharge_within_league_incidents: 0        # held from FY2028
+  target_2050_no_white_lead_paint: true                   # held from 2030
+  target_2030_white_lead_paint_kg: 0                      # kg form of target_2030_no_white_lead_paint, first set by POL-E2
+  target_2050_white_lead_paint_kg: 0                      # held at zero
+  # --- POL-E3 (policies/), merged 2026-11-13 ---
+  target_2050_water_drawn_high_stress_m3: 2400                      # long mark beside the 2030 mark of 3000; rainwater carried further at the two island chambers
+  target_2050_island_yard_water_from_rainwater_percent: 85          # long mark beside the 2030 mark of 50; leaves a margin for years of poor rain
+  target_2030_no_marine_resources_extracted: true                   # hold mark: nothing taken from the sea (no fish, whale, coral, shell, seabed)
+  target_2050_no_marine_resources_extracted: true                   # same hold carried to 2050
+  # --- POL-E4 (policies/), merged 2026-11-13 ---
+  oak_planted_ha_since_2019_fy2024: 4.7          # = 6.8 ha standing at the end of FY2025 less the 2.1 ha planted in FY2025
+  target_2030_oak_planted_ha_since_2019: 16.8    # 6.8 ha at FY2025 plus 5 years at the 2.0 ha a year already marked for 2030
+  target_2030_chambers_with_signed_hard_survey: 6   # the 5 signed in FY2025 plus the Chamber of Vava'u, signed by FY2027, renewed every five years
+  target_2050_no_reef_careening: true            # the 2030 mark held to 2050: no hard on living reef, surveyed to prove it
+  target_2030_careening_hard_on_living_reef_ha: 0   # numeric form of target_2030_no_reef_careening, for E4-T1 in data/targets.csv
+  target_2050_careening_hard_on_living_reef_ha: 0
+  target_2050_rat_incidents: 0                   # the 2030 mark held to 2050
+  target_2050_oak_planted_ha_per_year: 2.0       # the 2030 rate held to 2050, so the woods keep growing toward the Gilde's own keels
+  target_2050_oak_planted_ha_since_2019: 56.8    # 16.8 ha at 2030 plus 20 more years at 2.0 ha a year
+  target_2050_hull_timber_named_replanted_source_percent: 100   # the 2030 mark held to 2050
+  target_2050_chambers_with_signed_hard_survey: 6   # all 6 chambers, each survey renewed every five years
+  # --- POL-E5 (policies/), merged 2026-11-13 ---
+  target_2050_reused_share_percent: 27.0                        # long mark for E5-T1; provisions near 40% of input cap the total
+  target_2050_reused_share_excluding_provisions_percent: 45.0   # long mark for E5-T2; consistent with 27.0 at about 40% provisions
+  target_2050_broken_hull_timber_reused_percent: 95.0           # long mark for E5-T3; leaves room for rotted planks
+  target_2050_waste_landfill_share_percent: 0.0                 # long mark for E5-T4; lead recast, tar re-boiled
+  target_2030_waste_hazardous_landfill_t: 1.0                   # new target E5-T5; baseline waste_hazardous_t_fy2025 = 1.4 already in canon
+  target_2050_waste_hazardous_landfill_t: 0.0                   # long mark for E5-T5
+
+# Phase 5: the written policies (standin' orders) under policies/, one entry per file.
+# Milestones FY2026-FY2030 live in data/targets.csv; headline 2030 and 2050 marks live in the
+# topic block beside their FY2025 values. Kermis years throughout; base year FY2024.
+policies_adopted_by: "Kermis Council, October 2026"   # the written orders gather standin' orders an' 2030 marks set at the Kermis of 2025
+policies_milestones_set_by: "Raad van Kapiteins, Kermis of 2025"   # the year-by-year path was costed with the 2030 marks
+policies_review: "every Kermis Council; marks reset no later than the Kermis of 2030"
+policies_milestone_years: [FY2026, FY2027, FY2028, FY2029, FY2030]
+policies_long_mark_year: FY2050
+policies:
+  - id: POL-E1
+    title: "The Vow of the Old Ways"
+    title_english: "Climate policy"
+    esrs: [E1-2, E1-3, E1-4]
+    accountable: "Quartermaster-General"
+    carried_out_by: "Harbourmasters and masters"
+    file: "policies/e1-climate.md"
+  - id: POL-E2
+    title: "The Clean Wake Order"
+    title_english: "Pollution policy"
+    esrs: [E2-1, E2-2, E2-3]
+    accountable: "Quartermaster-General"
+    carried_out_by: "Harbourmasters"
+    file: "policies/e2-pollution.md"
+  - id: POL-E3
+    title: "The Water Cask Order"
+    title_english: "Water and marine resources policy"
+    esrs: [E3-1, E3-2, E3-3]
+    accountable: "Quartermaster-General"
+    carried_out_by: "Harbourmasters and pursers"
+    file: "policies/e3-water-marine.md"
+  - id: POL-E4
+    title: "The Living Coasts Order"
+    title_english: "Biodiversity and ecosystems policy"
+    esrs: [E4-2, E4-3, E4-4]
+    accountable: "Quartermaster-General"
+    carried_out_by: "Harbourmasters and master carpenters"
+    file: "policies/e4-biodiversity.md"
+  - id: POL-E5
+    title: "The Make-Do Order"
+    title_english: "Resource use and circular economy policy"
+    esrs: [E5-1, E5-2, E5-3]
+    accountable: "Quartermaster-General"
+    carried_out_by: "Harbourmasters and master carpenters"
+    file: "policies/e5-resources.md"
+  - id: POL-S1
+    title: "The Articles and the Parley"
+    title_english: "Labour relations and social dialogue policy"
+    esrs: [S1-1, S1-2, S1-3, S1-4, S1-5, S1-8]
+    accountable: "Quartermaster-General"
+    carried_out_by: "ships' councils and chamber quartermasters"
+    file: "policies/s1-labour-relations.md"
+  - id: POL-S2
+    title: "The Fitting-Out Order"
+    title_english: "Value-chain workers policy"
+    esrs: [S2-1, S2-2, S2-3, S2-4, S2-5]
+    accountable: "Quartermaster-General"
+    carried_out_by: "Harbourmasters and boarding officers"
+    file: "policies/s2-value-chain-workers.md"
+  - id: POL-S3
+    title: "The Good Neighbour Order"
+    title_english: "Affected communities policy"
+    esrs: [S3-1, S3-2, S3-3, S3-4, S3-5]
+    accountable: "Captain-General"
+    carried_out_by: "Harbourmasters"
+    file: "policies/s3-port-communities.md"
+  - id: POL-S4
+    title: "The Honest Manifest Order"
+    title_english: "Consumers and end-users policy"
+    esrs: [S4-1, S4-2, S4-3, S4-4, S4-5]
+    accountable: "Captain-General"
+    carried_out_by: "pursers and the Chamber of Port Royal auction house"
+    file: "policies/s4-consignees-clients.md"
+  - id: POL-G1-2
+    title: "The Thirty Days Order"
+    title_english: "Supplier relations and payment practices policy"
+    esrs: [G1-2, G1-6]
+    accountable: "Advocaat-Boekhouder"
+    carried_out_by: "Harbourmasters and chamber boekhouders"
+    file: "policies/g1-supplier-relations.md"
+  - id: POL-G1-5
+    title: "The Open Petition Order"
+    title_english: "Political engagement policy"
+    esrs: [G1-5]
+    accountable: "Captain-General"
+    carried_out_by: "Captain-General, countersigned by the Quartermaster-General"
+    file: "policies/g1-political-engagement.md"

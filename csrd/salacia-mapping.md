@@ -1,7 +1,7 @@
 ---
 title: The Salacia Mappin' — how the Gilde be set up on the platform
 status: draft
-last-verified: 2026-09-18
+last-verified: 2026-11-13
 canon-refs: [company.legal_name, reporting.fiscal_year_start_month, reporting.reported_year_key, reporting.base_year_key, scale.fleet_count, scale.base_count, scale.seagoing_headcount, scale.shore_headcount, scale.total_headcount]
 allow-anachronisms: [upload, spreadsheet]  # the platform's own words for the landsman's act, quoted once each in section 7
 ---
@@ -187,10 +187,34 @@ afore it be marked final, an' signs the notary's count.
 4. A hull named exists in [the fleet register](../data/fleet.csv); a base in [the bases register](../data/bases.csv).
 5. The register be formal for anythin' the platform will show a regulator.
 
+## 9. The written standin' orders an' the datapoints they answer
+
+Every policy, action an' target datapoint (ESRS 2 MDR-P, MDR-A, MDR-T an' MDR-M an' their
+topic codes) is answered from [the written orders](../policies/index.md). The year-by-year
+milestones are held in [the target register](../data/targets.csv), one row per mark.
+
+| Order | Datapoints | Target rows |
+| --- | --- | --- |
+| [POL-E1](../policies/e1-climate.md) | E1-2, E1-3, E1-4 | E1-T1 to E1-T4 |
+| [POL-E2](../policies/e2-pollution.md) | E2-1, E2-2, E2-3 | E2-T1 to E2-T7 |
+| [POL-E3](../policies/e3-water-marine.md) | E3-1, E3-2, E3-3 | E3-T1 to E3-T3 |
+| [POL-E4](../policies/e4-biodiversity.md) | E4-2, E4-3, E4-4 | E4-T1 to E4-T6 |
+| [POL-E5](../policies/e5-resources.md) | E5-1, E5-2, E5-3 | E5-T1 to E5-T5 |
+| [POL-S1](../policies/s1-labour-relations.md) | S1-1, S1-2, S1-3, S1-4, S1-5, S1-8 | S1-T1 to S1-T5 |
+| [POL-S2](../policies/s2-value-chain-workers.md) | S2-1 to S2-5 | S2-T1 to S2-T6 |
+| [POL-S3](../policies/s3-port-communities.md) | S3-1 to S3-5 | S3-T1 to S3-T5 |
+| [POL-S4](../policies/s4-consignees-clients.md) | S4-1 to S4-5 | S4-T1 to S4-T5 |
+| [POL-G1-2](../policies/g1-supplier-relations.md) | G1-2, G1-6 | G1-2-T1 to G1-2-T5 |
+| [POL-G1-5](../policies/g1-political-engagement.md) | G1-5 | G1-5-T1 to G1-5-T4 |
+
+The milestones run on the Kermis year. Where the platform's reportin' year is a calendar year,
+the Kermis year that ends inside it is the one quoted, an' the answer says so in one sentence.
+
 ## Related
 
 - [The five chambers](../lore/bases.md) an' [the fleet](../lore/fleet.md)
 - [Governance](../lore/governance.md) an' [the people](../lore/people.md)
 - [ESRS 2 general disclosures](esrs2-general.md)
 - [The reportin' playbook](../agents/reporting-playbook.md)
+- [The written standin' orders](../policies/index.md) an' [the target register](../data/targets.csv)
 - [Canon](../canon/facts.yaml)

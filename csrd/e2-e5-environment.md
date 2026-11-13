@@ -1,7 +1,7 @@
 ---
 title: E2 to E5 Environment — what fouls the water, the fresh water, the livin' coasts an' makin' do
 status: draft
-last-verified: 2026-09-18
+last-verified: 2026-11-13
 canon-refs:
   - company.legal_name
   - scale.fleet_count
@@ -47,6 +47,8 @@ no fine — and covered kilns cut smoke and cost together.
 
 ### E2-1 Policies
 
+The standin' orders below are written out in full as [POL-E2 The Clean Wake Order](../policies/e2-pollution.md), adopted by the Kermis Council of October 2026, with their scope, accountability an' the actions planned to FY2030.
+
 Three standin' orders of the Raad van Kapiteins bind every hull and chamber, with no exemption
 granted in FY2025. Each Harbourmaster is accountable at their hard, the Quartermaster-General
 across the Gilde. We buy no chemical beyond those in E2-5.
@@ -76,6 +78,8 @@ across the Gilde. We buy no chemical beyond those in E2-5.
 Nothin' was undone and no action abandoned.
 
 ### E2-3 Targets
+
+The year-by-year milestones from FY2026 to FY2030 an' the 2050 marks for these targets are set in [POL-E2 The Clean Wake Order](../policies/e2-pollution.md) an' held in [the target register](../data/targets.csv).
 
 Set at the Kermis of 2025 against FY2024; none met by buyin' anythin'.
 
@@ -149,6 +153,8 @@ monsoon is a season lost.
 
 ### E3-1 Policies
 
+The standin' orders below are written out in full as [POL-E3 The Water Cask Order](../policies/e3-water-marine.md), adopted by the Kermis Council of October 2026, with their scope, accountability an' the actions planned to FY2030.
+
 - **On casks.** Filled only at a spring, stream or well the chamber holds under a written lease
   or a harbourmaster's permission, never at a village's own drawin' place. At Sainte-Marie this
   is the **fresh-water lease from the village of Ambodifotatra**, renewed each Kermis year, which
@@ -169,6 +175,8 @@ yard's own timber and tile). The Ambodifotatra lease was read at the village cou
 now lands its own victuals when 220 hands come ashore.
 
 ### E3-3 Targets
+
+The year-by-year milestones from FY2026 to FY2030 an' the 2050 marks for these targets are set in [POL-E3 The Water Cask Order](../policies/e3-water-marine.md) an' held in [the target register](../data/targets.csv).
 
 | Metric | FY2024 | FY2025 | 2030 mark |
 | --- | --- | --- | --- |
@@ -255,6 +263,8 @@ nursery.
 
 ### E4-2 Policies
 
+The standin' orders below are written out in full as [POL-E4 The Living Coasts Order](../policies/e4-biodiversity.md), adopted by the Kermis Council of October 2026, with their scope, accountability an' the actions planned to FY2030.
+
 **The refused-cargo list**, from the articles.
 
 - **Protected species and materials**: no ivory, rhino horn, pangolin, shark fin, live coral or
@@ -292,6 +302,8 @@ sandalwood, pearl shell and gum copal on PAC-1 read against the grower's mark be
 again ashore, not once as before.
 
 ### E4-4 Targets
+
+The year-by-year milestones from FY2026 to FY2030 an' the 2050 marks for these targets are set in [POL-E4 The Living Coasts Order](../policies/e4-biodiversity.md) an' held in [the target register](../data/targets.csv).
 
 | Metric | FY2024 | FY2025 | 2030 mark |
 | --- | --- | --- | --- |
@@ -360,6 +372,8 @@ than purchase and always was.
 
 ### E5-1 Policies
 
+The standin' orders below are written out in full as [POL-E5 The Make-Do Order](../policies/e5-resources.md), adopted by the Kermis Council of October 2026, with their scope, accountability an' the actions planned to FY2030.
+
 **The salvage articles**, older than the Standards and read aloud at every Kermis.
 
 - **Every prize timber, cask and rope is reused.** A condemned prize's gear, once the Prize
@@ -382,6 +396,8 @@ of which 204 t went back into the fleet as knees, fenders, dunnage and plank. Ga
 ash, once tipped at three chambers, now goes to the ropewalk's lye and the oak plantin'.
 
 ### E5-3 Targets
+
+The year-by-year milestones from FY2026 to FY2030 an' the 2050 marks for these targets are set in [POL-E5 The Make-Do Order](../policies/e5-resources.md) an' held in [the target register](../data/targets.csv).
 
 | Metric | FY2024 | FY2025 | 2030 mark |
 | --- | --- | --- | --- |
@@ -469,6 +485,10 @@ number new to this file has been proposed to canon rather than written into it.
 
 ## Related
 
+- [POL-E2 The Clean Wake Order](../policies/e2-pollution.md) — the written policy, its actions, milestones an' 2050 marks
+- [POL-E3 The Water Cask Order](../policies/e3-water-marine.md) — the written policy, its actions, milestones an' 2050 marks
+- [POL-E4 The Living Coasts Order](../policies/e4-biodiversity.md) — the written policy, its actions, milestones an' 2050 marks
+- [POL-E5 The Make-Do Order](../policies/e5-resources.md) — the written policy, its actions, milestones an' 2050 marks
 - [E1 Climate Change](e1-climate.md) — the tally these four topics read a second way
 - [The reckonin' o' what matters](double-materiality.md) — where E2, E4 an' E5 were scored material an' E3 partially so
 - [The five chambers](../lore/bases.md) — the livin' coast of each hard, an' the Ambodifotatra water lease

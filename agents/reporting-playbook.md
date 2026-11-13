@@ -1,7 +1,7 @@
 ---
 title: The Reportin' Playbook — how an agent answers for the Gilde
 status: draft
-last-verified: 2026-09-18
+last-verified: 2026-11-13
 canon-refs: [reporting.reported_year_key, reporting.base_year_key, e1.scope1_fossil_tco2e_fy2025, e1.scope2_tco2e, governance.injury_schedule_eur.right_arm, scale.fleet_count]
 ---
 
@@ -34,12 +34,13 @@ propose a canon key. Never fill the gap with a likely number.
 The platform asks, for a disclosure requirement (say E1-1 or GOV-2), for prose.
 
 **Procedure**
-1. Open the topic file whose name matches the code: E1 → `../csrd/e1-climate.md`; E2 to E5 → `../csrd/e2-e5-environment.md`; S1 → `../csrd/s1-workforce.md`; S2 to S4 → `../csrd/s2-s4-value-chain-communities.md`; G1 → `../csrd/g1-conduct.md`; BP, GOV, SBM, IRO → `../csrd/esrs2-general.md`.
-2. Read the section headed with that code. Lift its facts; do not paraphrase a number.
-3. If the section points to lore (the articles, the backstory, operations), read that too, but quote only what the topic file needs.
-4. Draft one to four paragraphs in the **formal register**. Give the standard term in brackets at first mention. No headings inside the datapoint. Bad news first.
-5. Check each number against canon. Check each name against `../data/fleet.csv`, `../data/bases.csv`, `../lore/people.md`.
-6. Append the citation line.
+1. If the datapoint asks for a policy, an action or a target (E1-2 to E1-4, E2-1 to E2-3, E3-1 to E3-3, E4-2 to E4-4, E5-1 to E5-3, S1-1 to S1-5, S1-8, S2-1 to S4-5, G1-2, G1-5, G1-6, or MDR-P, MDR-A, MDR-T, MDR-M), open the written order named in `../policies/index.md` first: it holds the scope, accountability, actions, the target table an' the metric definitions. Take the year-by-year milestones from `../data/targets.csv`, an' the year's facts from the topic file below.
+2. Otherwise open the topic file whose name matches the code: E1 → `../csrd/e1-climate.md`; E2 to E5 → `../csrd/e2-e5-environment.md`; S1 → `../csrd/s1-workforce.md`; S2 to S4 → `../csrd/s2-s4-value-chain-communities.md`; G1 → `../csrd/g1-conduct.md`; BP, GOV, SBM, IRO → `../csrd/esrs2-general.md`.
+3. Read the section headed with that code. Lift its facts; do not paraphrase a number.
+4. If the section points to lore (the articles, the backstory, operations), read that too, but quote only what the topic file needs.
+5. Draft one to four paragraphs in the **formal register**. Give the standard term in brackets at first mention. No headings inside the datapoint. Bad news first.
+6. Check each number against canon. Check each name against `../data/fleet.csv`, `../data/bases.csv`, `../lore/people.md`.
+7. Append the citation line.
 
 **Template**
 
@@ -178,6 +179,7 @@ Sources: csrd/double-materiality.md §The outcome; data/iros.csv; canon: dma.*
 10. **Fillin' an `[UNCHARTED]` with a likely number.** Propose it; do not assert it.
 11. **Quotin' the guilder column as a value.** Guilders be flavour in prose tables only; every reported figure be EUR.
 12. **Treatin' the seized crews as anythin' but an actual negative impact.** The articles protect them; the reckonin' still calls the seizure what it be.
+13. **Quotin' a milestone as an outcome.** The FY2026 to FY2030 cells in `../data/targets.csv` be marks, not results. FY2026 closed on 2026-09-30 an' its outcome be `[UNCHARTED]` until canon holds it.
 
 ## 6. How to cite
 

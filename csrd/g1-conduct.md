@@ -1,7 +1,7 @@
 ---
 title: G1 Business Conduct — conduct under the articles
 status: draft
-last-verified: 2026-09-18
+last-verified: 2026-11-13
 canon-refs:
   - company.legal_name
   - company.prize_council_seat
@@ -196,6 +196,8 @@ was killed or gravely hurt.
 
 ## G1-2 Management o' relationships with suppliers
 
+How the Gilde chooses, treats an' pays the houses that fit it out is written out in [POL-G1-2 The Thirty Days Order](../policies/g1-supplier-relations.md), with its marks to 2050.
+
 The chandlers, rope-walks and yards that fit us out numbered **96** in FY2025 across the
 5 chambers of operation: Baltic yards for oak, hemp and tar; the rope-walks and sail lofts
 at Vlissingen and Ambon; victuallers and coopers at the other three chambers. Most are
@@ -274,6 +276,8 @@ No fine, penalty or settlement was paid to any authority, and no proceedin' is o
 
 ## G1-5 Political influence an' lobbying
 
+The rule of open petition is written out in [POL-G1-5 The Open Petition Order](../policies/g1-political-engagement.md), with its marks to 2050.
+
 This company pays **no political money**: no contribution, in EUR or in kind, to any party,
 candidate, campaign, committee or foundation in FY2025 or FY2024, **EUR 0** in both years.
 There is no political arm, no subscription any part of which is political, and no officer
@@ -292,6 +296,8 @@ was carried on in FY2025**: we are in no transparency register and instruct no
 representative. If that changes, the entry will be named here first.
 
 ## G1-6 Payment practices
+
+The marks for payin' on time to 2050 are set in [POL-G1-2 The Thirty Days Order](../policies/g1-supplier-relations.md).
 
 | Metric | Unit | FY2024 | FY2025 |
 | --- | --- | --- | --- |
@@ -330,6 +336,8 @@ so twice.
 
 ## Related
 
+- [POL-G1-2 The Thirty Days Order](../policies/g1-supplier-relations.md) — the written policy, its actions, milestones an' 2050 marks
+- [POL-G1-5 The Open Petition Order](../policies/g1-political-engagement.md) — the written policy, its actions, milestones an' 2050 marks
 - [Operations](../lore/operations.md) — the Division, the 5 steps, the 8 refusal conditions
 - [The articles of agreement](../lore/articles-of-agreement.md) — Articles 7, 15, 16, 17, 18, 22
 - [Who holds the helm](../lore/governance.md) — the Prize Council, the deferred fifth

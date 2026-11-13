@@ -74,7 +74,7 @@ uv run scripts/check_canon.py
 
 It verifies frontmatter, canon references, anachronisms, numeric guards, relative links
 and CSV headers. `uv` resolves PyYAML from the script header; nothing needs installing. A
-new prose file under `brand/`, `lore/`, `csrd/` or `agents/` needs frontmatter with
+new prose file under `brand/`, `lore/`, `csrd/`, `agents/` or `policies/` needs frontmatter with
 `title`, `status`, `last-verified` and `canon-refs`. A word from
 `canon/anachronisms.txt` may be used only when the standard requires it, allowed per file
 with `allow-anachronisms:` and a reason.
