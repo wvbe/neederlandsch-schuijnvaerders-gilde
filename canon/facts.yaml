@@ -17,6 +17,7 @@ company:
   reincorporated_nv_year: 1929                 # re-incorporated as N.V. under the Dutch company law of 1928
   founding_prize: "Piet Heyn's silver fleet, Matanzas Bay, 8 September 1628"
   age_in_2026: 405
+  chamber_count: 6                             # since the Kermis Council of October 2025; the reported year FY2025 had 5 (scale.base_count)
   motto: "VENTO SOLO"                          # Latin, always in capitals and never translated in display; adopted 2026-11-13
   motto_gloss: "by wind alone"                 # given once, in brackets, like the English gloss of the name
   motto_language: "Latin"
@@ -42,7 +43,7 @@ reporting:
 
 scale:
   fleet_count: 25
-  base_count: 5
+  base_count: 5                                # chambers within the FY2025 reporting boundary; the sixth opened after it (chambers_opened_after_reported_year)
   seagoing_headcount: 1944
   shore_headcount: 350
   total_headcount: 2294
@@ -163,6 +164,24 @@ bases:                                        # one chamber per region cluster; 
     lon: 128.1814
     established_year: 1623
     function: "spice islands trade, Pacific gateway, sail loft"
+
+chambers_opened_after_reported_year:          # outside 102024-092025; no reported FY2025 value draws on these
+  - key: vavau
+    name: "Neiafu, Vava'u, Tonga"
+    chamber_name: "Chamber of Vava'u"
+    region: "Pacific islands"
+    country: "TO"
+    entity_name: "Crooked Sailors' Guild (Vava'u) Limited"
+    entity_language: "English"
+    entity_gloss: "Crooked Sailors' Guild, Vava'u"
+    is_root_entity: false
+    chamber_code: "VV"
+    lat: -18.6500
+    lon: -173.9833
+    established_year: 2025
+    established_by: "vote of the Kermis Council, October 2025"
+    function: "Pacific islands run: harbour, victualling and fresh water at the far end of PAC-1"
+    # shore headcount uncharted: first counted in the first reporting year that includes the chamber
 
 governance:
   supervisory_body: "De Heeren Vijf"

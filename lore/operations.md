@@ -1,7 +1,7 @@
 ---
 title: Operations — routes, cargo, the Division, shares an' seasons
 status: draft
-last-verified: 2026-09-18
+last-verified: 2026-11-13
 canon-refs:
   - scale.fleet_count
   - scale.base_count
@@ -43,6 +43,9 @@ Seven standing routes carry the trade. Passage times are the median of the last 
 | PAC-1 | Ambon | the Bismarck Archipelago, the Solomon Islands, the Caroline Islands and Fiji | April to October on the south-east trades; home before the South Pacific cyclone season, November to April | 90 | iron, canvas, salt, letters | sandalwood under the grower's mark, pearl shell, gum copal | NSG-10, NSG-04 |
 | IND-3 | Ambon | Vlissingen (via Sainte-Marie and the Cape) | Westbound on the north-east monsoon, October to March; the Cape rounded before the southern winter | 150 | see IND-1 | cloves, nutmeg, mace, cinnamon, vanilla, pearls | NSG-01, NSG-03, NSG-04, NSG-18 |
 | CST-1 | Baltimore | Vlissingen (via the Irish Sea and the Channel) | All year; thinnest November to February | 12 | salt beef, biscuit, casks, letters | letters, chambers' totals, chandlery | NSG-25, NSG-14, NSG-24, NSG-06 |
+
+**After the reported year.** From the Kermis year 2026, PAC-1 waters and victuals at the
+Chamber of Vava'u, opened in October 2025 at the far end of the run, east of Fiji.
 
 **On the seasons, plainly.** The Atlantic hurricane season runs June to November and peaks
 in September, so ATL-1 and ATL-2 are sailed round it: a retourschip caught on that coast in
@@ -251,7 +254,7 @@ he is paid for it like any other chandler.
 
 - [Backstory and timeline](backstory.md) — why the Gilde sails as it does
 - [The fleet](fleet.md) — the hulls named above
-- [The five chambers](bases.md) — where the routes begin and end
+- [The six chambers](bases.md) — where the routes begin and end
 - [Articles of agreement](articles-of-agreement.md) — the share ladder and the Sainte-Marie clause
 - [Fleet register](../data/fleet.csv) — the hull marks
 - [Canon](../canon/facts.yaml) — the numbers an' names

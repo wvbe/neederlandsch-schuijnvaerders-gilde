@@ -1,7 +1,7 @@
 ---
 title: The Fleet — 25 hulls an' who sails 'em
 status: draft
-last-verified: 2026-09-18
+last-verified: 2026-11-13
 canon-refs:
   - scale.fleet_count
   - scale.seagoing_headcount
@@ -21,7 +21,7 @@ canon-refs:
 The Gilde sails a fleet of 25 wooden ships, crewed by 1,944 seagoing hands and grouped by
 type as canon records them: 4 retourschepen (East Indiaman) of 220 hands each, 6 jachten
 (light frigate) of 90, 8 fluyts of 18, 5 interdiction sloops or barks of 70, and 2 galjoots
-(advice boat) of 15. Every hull is company-owned, enrolled at one of the five chambers and
+(advice boat) of 15. Every hull is company-owned, enrolled at one of the five chambers that stood in the reported year (none yet at Vava'u) and
 modelled in the Salacia platform as a location under that chamber's legal entity. Each
 ship's company holds a minority "parten" interest in her hull, stated below as a fraction,
 and is paid out of her earnings as the crew share. The register in `../data/fleet.csv` is
@@ -168,6 +168,6 @@ every Kermis closin'.
 ## Related
 
 - [Fleet register](../data/fleet.csv) — the machine layer o' this file
-- [The five chambers](bases.md) — where each hull be enrolled
+- [The six chambers](bases.md) — where each hull be enrolled
 - [Brand guidelines](../brand/brand-guidelines.md) — the namin' conventions (section 6)
 - [Canon](../canon/facts.yaml) — the fleet mix an' the headcount

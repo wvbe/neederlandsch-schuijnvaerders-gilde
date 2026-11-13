@@ -1,9 +1,11 @@
 ---
-title: The Five Chambers — where the Gilde keeps its feet dry
+title: The Six Chambers — where the Gilde keeps its feet dry
 status: draft
-last-verified: 2026-09-18
+last-verified: 2026-11-13
 canon-refs:
   - scale.base_count
+  - company.chamber_count
+  - "chambers_opened_after_reported_year[key=vavau].entity_name"
   - scale.shore_headcount
   - company.founded_year
   - company.legal_name
@@ -20,10 +22,13 @@ canon-refs:
   - "bases[key=ambon].shore_headcount"
 ---
 
-# The Five Chambers — where the Gilde keeps its feet dry
+# The Six Chambers — where the Gilde keeps its feet dry
 
 The Neederlandsch Schuijnvaerders Gilde N.V. (the Netherlandish Guild of Crooked Sailors)
-operates from 5 chambers of operation, one in each cluster of the waters we sail. Each
+operated from 5 chambers of operation in the reported year 102024-092025, one in each
+cluster of the waters we sail. Since the Kermis Council of October 2025 there be a sixth, at
+Vava'u in Tonga, set down last below; it opened after the reported year and carries none of
+its figures. Each
 chamber (kamer) is a legal entity in its own right under the root entity at Vlissingen, and
 each is modelled as a location in the Salacia platform, with the hulls enrolled there as
 locations beneath it. Together the chambers employ 350 people ashore; the figure per chamber
@@ -217,6 +222,43 @@ nutmeg seedlings behind the loft an' gives 'em to growers who take its contract.
 be coral to the shore, an' the chamber's ballast be sand from the river mouth, never reef
 stone; the fluyts anchor on the marked sand, an' the loft's cuttings o' canvas an' tarred
 twine go to the kiln, not the water.
+
+## Chamber of Vava'u — the far harbour
+
+**Summary (formal).** The Chamber of Vava'u is the legal entity
+Crooked Sailors' Guild (Vava'u) Limited (Crooked Sailors' Guild, Vava'u), established 2025
+at Neiafu, Vava'u, TO, by vote of the Kermis Council in October 2025. Its function is the Pacific islands run:
+harbour, victualling and fresh water at the far end of route PAC-1. It opened after the
+close of the reported year 102024-092025, lies outside the FY2025 reporting boundary, and
+carries no figure in it. Its shore headcount is first counted in the first reporting year
+that includes it.
+
+**The place an' the hook.** For two generations the Gilde's jachten have worked the Pacific
+run out o' Ambon, anchorin' off the reef an' rowin' the goods ashore for island folk who
+wanted a carrier with no wire an' no smoke. Ninety days out an' ninety home, with nowhere
+o' our own at the far end. At the Kermis Council o' October 2025 the hands voted the run a
+harbour: Neiafu, on the deep, sheltered water the charts call the Port of Refuge, in the
+Kingdom o' Tonga. A sixth ring was cut into the arms that same month. It be the first
+chamber opened in three hundred an' thirty-four years, an' the first the Gilde ever opened
+by vote o' all hands rather than by a skipper's nerve.
+
+**What she does today, with 1600s means.** Vava'u be the waterin' an' victuallin' place at
+the far end o' PAC-1, east o' Fiji, where the hulls o' that run fill their casks, take on
+fresh food an' lie snug afore the long beat home. The chamber holds its quay by lease, as
+the law o' the Kingdom requires, for no foot o' Tongan soil may be sold. No hull be enrolled
+here yet; the hulls o' the run keep their enrolment at Ambon, an' until De Heeren Vijf
+appoint the chamber's own Harbourmaster, Ambon's Harbourmaster directs it.
+
+**The folk o' the port.** The chamber hires from Vava'u first an' posts its papers in
+Tongan an' English both. Its first open parley be set for the close o' the Kermis year
+2026, an' what the folk o' the port bring to it will be recorded under S3 like every
+other chamber's.
+
+**The livin' coast.** Vava'u be islands, reef an' deep channel, an' from July to October
+the humpback whales come into its waters to calve. The Sainte-Marie rule holds here: no
+hull careened or fired for practice in the whale months, an' the boats go round the calves.
+No hull careens on the reef, an' none lies in the harbour through the cyclone season,
+November to April, when the run be home.
 
 ## Related
 

@@ -1,7 +1,7 @@
 ---
 title: Who Holds the Helm — the governance o' the Gilde
 status: draft
-last-verified: 2026-09-18
+last-verified: 2026-11-13
 canon-refs:
   - company.legal_name
   - company.seat
@@ -16,6 +16,7 @@ canon-refs:
   - governance.prize_body
   - governance.presidency_rotation
   - scale.base_count
+  - company.chamber_count
   - scale.fleet_count
   - reporting.fiscal_year_name
   - reporting.reported_year_label
@@ -46,9 +47,14 @@ and appointed by De Heeren Vijf sitting, for four years, renewable once and no l
 bewindhebber may at the same time hold a command at sea, a Harbourmaster's chair or the
 office of Advocaat-Boekhouder; that is what keeps the tier a watch and not a second crew.
 
+The sixth chamber, Vava'u, opened by the Kermis Council of October 2025 after the reported
+year, has no bewindhebber of its own yet. Until its ships' councils and shore muster can
+nominate one, it is heard through Ambon's. The Lords keep their name: it is older than the
+count.
+
 The presidency turns about the 5 chambers on a fixed wheel: **Vlissingen three years, each
 other chamber one year**. The chamber whose turn it is names one of its own as presiding
-Lord for that turn. The title belongs to the office, not to the person who fills it.
+Lord for that turn. Vava'u joins the wheel when it seats its own bewindhebber. The title belongs to the office, not to the person who fills it.
 
 De Heeren Vijf sit four times in the Kermis year, once in each quarter, the October sitting
 at Vlissingen and the rest where the presidency lies. The Quartermaster-General may call
@@ -131,7 +137,8 @@ chamber's tallies to the Advocaat-Boekhouder before they are added.
 
 A Harbourmaster's own chamber board sits monthly. All five sit together as the
 harbourmasters' muster twice a year, before each full muster of the Raad, to settle what
-the chambers will do about the marks the Raad has set.
+the chambers will do about the marks the Raad has set. Until De Heeren Vijf appoint a
+Harbourmaster for Vava'u, Ambon's Harbourmaster directs that chamber as well.
 
 ## 7. How a matter of sustainability reaches each body
 
@@ -205,7 +212,7 @@ the Gilde's papers where these words are used.
 
 - [The officers](people.md) — who fills these chairs in FY2025
 - [The articles of agreement](articles-of-agreement.md) — the code all of this is bound by
-- [The five chambers](bases.md) — the entities the Harbourmasters direct
+- [The six chambers](bases.md) — the entities the Harbourmasters direct
 - [The fleet](fleet.md) — the ships whose councils elect the Raad
 - [Canon](../canon/facts.yaml) — the names and numbers quoted here
 - [Research dossier](research/real-pirate-practices.md) — the record behind the two tiers

@@ -219,6 +219,26 @@ boards sign the management report; ESRS 2 GOV-1 to GOV-5 need named bodies with 
 **Rejected.** A single seventeen-seat board in the Heeren XVII style: removes the elected
 counterweight that makes the company piratical and is unwieldy for five chambers.
 
+## 9. A sixth chamber at Vava'u
+
+**Decision (2026-11-13).** A sixth chamber, the Chamber of Vava'u (Crooked Sailors' Guild
+(Vava'u) Limited, Neiafu, Tonga, chamber code VV), opened by the Kermis Council in October
+2025, after the reported year `102024-092025`. Prompted by the approved coat of arms, which
+shows six rings.
+
+**Constraint satisfied.** The FY2025 figures stay valid: `scale.base_count` remains 5 for the
+reported year and `bases.csv`, `workforce.csv` and the activity data keep five chambers.
+Canon holds the new chamber under `chambers_opened_after_reported_year` and the current
+count as `company.chamber_count: 6`. The canon region "Pacific islands" gains its own
+chamber; PAC-1 gains a harbour at its far end.
+
+**Open.** The chamber's shore headcount, its Harbourmaster and its bewindhebber are
+uncharted until the first reporting year that includes it.
+
+**Rejected.** Cape of Good Hope (careful handling needed for VOC-era slavery at the Cape);
+Willemstad, Curaçao (overlaps Port Royal's ground); a retcon into FY2025 (would rewrite every
+reported figure).
+
 ## Additional historical hooks to weave in (Tasks 3, 5, 8, 18)
 
 - Piet Heyn's silver fleet at Matanzas Bay, 8 September 1628, as the "founding prize".

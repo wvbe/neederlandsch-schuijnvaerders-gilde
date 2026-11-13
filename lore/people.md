@@ -1,7 +1,7 @@
 ---
 title: The Officers o' the Gilde — who holds which chair
 status: draft
-last-verified: 2026-09-18
+last-verified: 2026-11-13
 canon-refs:
   - governance.presiding_officer
   - governance.counterweight_officer
@@ -103,7 +103,7 @@ older than the captain. She set up the copyin' o' the chambers' books to Vlissin
 half-year rhythm after the Sainte-Marie ledgers went mouldy in 2014, an' she be the one who
 writes the landsmen's exception into each year's instruction to the notary's clerk.
 
-## The five chambers
+## The chambers
 
 ### Harbourmaster Joost Wisse — Kamer Vlissingen
 
@@ -174,6 +174,12 @@ an' tarred twine to the kiln an' not the water, an' he checks it himself.
 
 ## The fleet's navigator
 
+### Chamber of Vava'u — no Harbourmaster yet
+
+Opened by the Kermis Council o' October 2025, after the reported year. Until De Heeren Vijf
+appoint its first Harbourmaster, Harbourmaster Yusuf Tuhumury o' Kamar Ambon directs it
+from across the run.
+
 ### Sailing Master Andi Nurhaida — Kamar Ambon
 
 Born 1988. Joined the Gilde 2010. Term 2024-10-01 to 2027-09-30, appointed by the Raad van
@@ -210,5 +216,5 @@ The machine layer o' this table be `governance.officers` in [canon](../canon/fac
 
 - [Who holds the helm](governance.md) — what each chair does an' who fills it
 - [The articles of agreement](articles-of-agreement.md) — what every one o' these ten signed
-- [The five chambers](bases.md) — the places they keep
+- [The six chambers](bases.md) — the places they keep
 - [The fleet](fleet.md) — the hulls they sail

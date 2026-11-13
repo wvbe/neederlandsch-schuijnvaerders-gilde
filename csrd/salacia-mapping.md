@@ -44,8 +44,11 @@ written here in every datapoint.
 | Guilde des Navigateurs Obliques de Sainte-Marie SARL | Guild of Oblique Navigators of Sainte-Marie | Chambre de Sainte-Marie | MG | subsidiary | 50 |
 | PT Gilda Pelayar Serong Ambon | Guild of Crooked Sailors of Ambon, limited company | Kamar Ambon | ID | subsidiary | 65 |
 
-The same six entities be declared for the base year `102023-092024`; no chamber was opened,
-closed or merged between the two years.
+The same five entities be declared for the base year `102023-092024`; no chamber was opened,
+closed or merged between the two years. After the reported year the Kermis Council o'
+October 2025 opened a sixth chamber, under Crooked Sailors' Guild (Vava'u) Limited (TO). It
+be declared as a sixth legal entity, with its base location, from the first reportin' year
+that includes it, an' never for `102024-092025`.
 
 ## 3. Locations
 

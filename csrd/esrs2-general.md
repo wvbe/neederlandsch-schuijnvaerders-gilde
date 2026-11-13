@@ -238,7 +238,7 @@ Vlissingen, Prize Council at Middelburg. We carry **spices, valuables an' exotic
 materials** — low volume, high value, an' nothing else — in a fleet of 25 wooden ships
 worked out of 5 chambers of operation, crewed by 1,944 seagoing hands with 350 hands ashore:
 **2,294 souls all told**. Turnover for FY2025 be **EUR 480 million**; the comparable figure
-for FY2024 be EUR 461 million. We sail seven waters — the Netherlands, the United Kingdom,
+for FY2024 be EUR 461 million. After the year closed, the Kermis Council o' October 2025 opened a sixth chamber at Vava'u in Tonga; it carries no figure in this statement. We sail seven waters — the Netherlands, the United Kingdom,
 Ireland, the Caribbean, the Indian Ocean, South East Asia an' the Pacific islands — on seven
 standin' routes sailed to the season an' not to a date o' our choosin'.
 

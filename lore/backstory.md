@@ -1,8 +1,8 @@
 ---
 title: The Backstory — four centuries o' sailin' aslant
 status: draft
-last-verified: 2026-09-18
-canon-refs: [company.founded_year, company.reincorporated_nv_year, company.seat, company.prize_council_seat, scale.fleet_count, scale.base_count, scale.total_headcount_rounded, reporting.reported_year_key]
+last-verified: 2026-11-13
+canon-refs: [company.founded_year, company.reincorporated_nv_year, company.seat, company.prize_council_seat, scale.fleet_count, scale.base_count, company.chamber_count, scale.total_headcount_rounded, reporting.reported_year_key]
 allow-anachronisms: [engine]  # named once, in the Vow of the Old Ways, as the thing forbidden
 ---
 
@@ -13,7 +13,7 @@ allow-anachronisms: [engine]  # named once, in the Vow of the Old Ways, as the t
 The Neederlandsch Schuijnvaerders Gilde was founded in 1621 at Vlissingen by Zeeland
 skippers who held a commissie (a letter o' marque) an' a grudge. It be, today, a public
 company under Dutch law with its seat still at Vlissingen an' its Prize Council still at
-Middelburg, a fleet of 25 wooden ships, 5 chambers of operation on four oceans, an' about
+Middelburg, a fleet of 25 wooden ships, 6 chambers on four oceans, an' about
 2,300 souls under the articles. It has never owned a hull driven by anythin' but wind an'
 muscle, an' by its own articles it never will. In the year 102024-092025 it drew up its
 first reckonin' o' the year (sustainability statement) under the Brussels Articles (CSRD),
@@ -56,7 +56,7 @@ haggle it. That schedule, converted to euros an' raised many times, be the socia
 protection scheme we disclose under ESRS S1 today. Pirates invented workers' compensation
 afore the landsmen had a word for it; the Gilde merely kept payin'.
 
-## 3. Five chambers
+## 3. Six chambers
 
 The Gilde grew as the Companies grew, an' always in their shadow.
 
@@ -83,6 +83,11 @@ The Gilde grew as the Companies grew, an' always in their shadow.
   an end to Baldridge's slave dealin'. What they saw there wrote the **Sainte-Marie
   clause** into the articles: no slave, no pressed hand, no boy aboard any Gilde hull,
   from that day to this.
+- **Chamber of Vava'u (2025).** Younger than the others by three centuries. The Pacific
+  run out o' Ambon had served island folk for two generations with nowhere o' its own at
+  the far end, an' at the Kermis Council o' October 2025 the hands voted it a harbour:
+  Neiafu, on the Port of Refuge, in the Kingdom o' Tonga. The quay be leased, as all land
+  in the Kingdom must be. A sixth ring was cut into the arms the same month.
 
 ## 4. The Vow of the Old Ways, 1700
 
@@ -210,11 +215,12 @@ gettin' them there be a landsman's, an' we say so plainly.
 | 1974 | Letters of Marque Division reborn on a Rotterdam commissie | invented |
 | 2024 | Kermis Council votes to reckon under the Brussels Articles | invented |
 | 2025 | First reckonin' o' the year, period 102024-092025 | canon |
+| 2025 | Kermis Council votes a sixth chamber at Vava'u, Tonga; the sixth ring cut into the arms | invented |
 
 ## Related
 
 - [Research dossier](research/real-pirate-practices.md) — what be real, an' what we bent
-- [The five chambers](bases.md)
+- [The six chambers](bases.md)
 - [The fleet](fleet.md)
 - [Governance](governance.md) an' [the articles](articles-of-agreement.md)
 - [Operations](operations.md)

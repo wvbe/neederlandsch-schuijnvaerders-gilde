@@ -4,6 +4,11 @@ One row per chamber of operation (base). Values are copied from `../canon/facts.
 (`bases`), which is the source of truth; this file only describes the columns. Prose about
 the chambers lives in `../lore/bases.md`. Fields containing commas are quoted.
 
+The register holds the chambers within the FY2025 reporting boundary (`102024-092025`). The
+Chamber of Vava'u, opened in October 2025, lives in canon under
+`chambers_opened_after_reported_year` and joins this file with the first reporting year that
+includes it, with chamber code VV.
+
 | Column | Description |
 | --- | --- |
 | key | Canon key of the base, lower case with underscores; used by `fleet.csv` as `chamber_key` |
